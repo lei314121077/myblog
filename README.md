@@ -15,9 +15,10 @@
 # python
 ## [python 基础]()
 ## [python 进阶]()
-* [同步or已补]()
-* [线程or多线程]()
-* [Socket]()
+*  [同步or已补]()
+*  [线程or多线程]()
+*  [Socket]()
+
 ## [python 高阶函数]()
 ## [python 模块包]()
 * [Celery(任务调度)]()
@@ -32,7 +33,7 @@
 * [Django]()
 * [Flask]()
 * [Scrapy]()
-* 
+
 ## [python my tools]()
 ## [Openerp]()
 
