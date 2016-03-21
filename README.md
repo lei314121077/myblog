@@ -7,6 +7,7 @@
 ## [面向过程编程]()
 ## [面向对象编程]()
 ## [函数式编程]()
+
 # git 版本管理（工欲善其事，必先利其器）
 ## [git基础]()
 ## [git进阶]()
@@ -14,9 +15,9 @@
 # python
 ## [python 基础]()
 ## [python 进阶]()
-*[同步or已补]()
-*[线程or多线程]()
-*[Socket]()
+* [同步or已补]()
+* [线程or多线程]()
+* [Socket]()
 ## [python 高阶函数]()
 ## [python 模块包]()
 * [Celery(任务调度)]()
@@ -25,13 +26,16 @@
 * [Requests]()
 * [Unittest]()
 * [Sqlalchemy]()
+
 ## python 框架
 * [Tornado]()
 * [Django]()
 * [Flask]()
 * [Scrapy]()
+* 
 ## [python my tools]()
 ## [Openerp]()
+
 # Go 
 ## [Go基础]()
 ## [Go进阶]()
@@ -43,20 +47,24 @@
 ## NoSql系列数据库
 * [Mongodb]()
 * [PostgreSql]()
+
 ## 缓存系列数据库
 * [Redis]()
 * [Memcached]()
+
 ## 关系型系列数据库
 * [MySql]()
 * [SqlServer]()
 * [SqLite]()
 * [Oracle]()
+
 # 前端
 ## [css]()
 ## [javascript]()
 ## [jquery]()
 ## [angualjs]()
 ## [nodejs]()
+
 # Java
 ## [基础回顾,曾经的血与泪]()
 ## [SSH框架]()
@@ -74,15 +82,18 @@
 
 # 分布式
 ##  [分布式基础解析]()
+
 # hack 成长的点滴
 ## [hack基础]()
 ## [hack工具]()
+
 # Markdown
 ## [基本命令的使用]()
+
 # IDE
 ## [pycharm]()
 ## [sublime]()
-
+## [vim]()
 
 # 阅读（月读）
 ##  [金融（理财,投资）]()
