@@ -36,7 +36,7 @@
 
 ## [python my tools]()
 # Openerp
-## [openerp回忆录]()
+## [openerp回忆录](https://github.com/lei314121077/myblog/blob/master/openERP.md)
 
 # Go 
 ## [Go基础]()
