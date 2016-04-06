@@ -23,7 +23,10 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
 # 语法
 <p>
-* 注释  /* aaaaa  */
-* 
+*  注释   /* aaaaa  */
+*  导入包  package main
+*  声明报  import fmt
+*  打印 fmt.Println
+*  
 </p>
 
