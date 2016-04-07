@@ -25,7 +25,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
  1. 注释   /* aaaaa  */
  2. 导入包  package main
   * 导入路径是对应包在 $GOROOT/pkg/$GOOS_$GOARCH/、$GOPATH/pkg/$GOOS_$GOARCH/ 或当前路径中的相对路径
-  正确的姿势：
+ 正确的姿势：
   ```go
    import "fmt"          // 导入官方标准库  
    import "a/b"          // 绝对路径导入
@@ -36,7 +36,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
      "http"
    )
   ```
-  错误的姿势：
+ 错误的姿势：
   ```go
    import a/b/c
    import "a.b.c"
