@@ -24,6 +24,26 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
  1. 注释   /* aaaaa  */
  2. 导入包  package main
+  * 导入路径是对应包在 $GOROOT/pkg/$GOOS_$GOARCH/、$GOPATH/pkg/$GOOS_$GOARCH/ 或当前路径中的相对路径
+  正确的姿势：
+  ```go
+   import "fmt"          // 导入官方标准库  
+   import "a/b"          // 绝对路径导入
+   import "./a/b"        //相对路径导入
+   import "../a/b/c"     //相对路径导入
+   import (              //官方姿势，导入标准库
+     "fmt"
+     "http"
+   )
+  ```
+  错误的姿势：
+  ```go
+   import a/b/c
+   import "a.b.c"
+   import a.b.c
+  ```
+  >注意这里在导入包的时候包名需要以双引号引起来 ""
+  
  3. 声明包  import fmt
   * 使用package关键字声明当前源文件所在的包
   * 包声明语句是所有源文件的第一行非注释语句
