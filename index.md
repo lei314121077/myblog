@@ -39,11 +39,13 @@
 ## [openerp回忆录](https://github.com/lei314121077/myblog/blob/master/openERP.md)
 
 # Go 
-## [Go基础]()
-## [Go进阶]()
-## [Go并发编程实战]()
+* [Go基础]()
+* [Go进阶]()
+* [Go并发编程实战]()
 
 ## 微信开发
+* [微信开发入门]()
+*  [微信开发笔记]()
 
 # 数据库
 ## NoSql系列数据库
@@ -61,54 +63,59 @@
 * [Oracle]()
 
 # 前端
-## [css]()
-## [javascript]()
-## [jquery]()
-## [angualjs]()
-## [nodejs]()
-## [bootstrap]()
+* [css]()
+* [javascript]()
+*  [jquery]()
+*  [angualjs]()
+*  [nodejs]()
+*  [bootstrap]()
 
 # Java
-## [基础回顾,曾经的血与泪]()
-## [SSH框架]()
+*  [基础回顾,曾经的血与泪]()
+*  [SSH框架]()
 
 # linux
-## [linux 基础知识]()
-## [linux shell命令]()
-## [linux 上搭建服务器]()
-## [nginx 搭建服务器]()
-## [apache 搭建服务器]()
+*  [linux 基础知识]()
+*  [linux shell命令]()
+*  [linux 上搭建服务器]()
+*  [nginx 搭建服务器]()
+*  [apache 搭建服务器]()
 
 # 架构设计
-## [REST规范]()
-## [编程规范及约束]() 
+*  [REST规范]()
+*  [编程规范及约束]() 
+*  [编写高质量的代码]()
+*  [api对接-设计原则]()
+
 
 # 分布式
-##  [分布式基础解析]()
+*  [分布式基础解析]()
+*  [如何搭建你的分布式架构]()
+*  [分布式项目经验总结]()
 
 # hack 成长的点滴
-## [hack基础]()
-## [hack工具]()
+* [hack基础]()
+* [hack工具]()
 
 # Markdown
-## [基本使用](https://github.com/lei314121077/myblog/blob/master/Markdown.md)
+* [基本使用](https://github.com/lei314121077/myblog/blob/master/Markdown.md)
 
 # IDE
-## [pycharm]()
-## [sublime]()
-## [vim]()
+*  [pycharm]()
+*  [sublime]()
+*  [vim]()
 
 # 阅读（月读）
-##  [金融（理财,投资）]()
-##  [财务（会计）]()
-##  [编程 （技术）]()
-##  [经营（管理，创业）]()
+*   [金融（理财,投资）]()
+*   [财务（会计）]()
+*   [编程 （技术）]()
+*   [经营（管理，创业）]()
 
 # 思考
-## [信仰]()
-## [经历]()
-## [人际]()
-## [职场]()
+*  [信仰]()
+*  [经历]()
+*  [人际]()
+*  [职场]()
 
 
 
