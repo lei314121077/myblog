@@ -36,7 +36,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
      // 行注释
    }
   ```    
- 2. 导入包  package main
+2. 导入包  package main
   * 导入路径是对应包在 $GOROOT/pkg/$GOOS_$GOARCH/、$GOPATH/pkg/$GOOS_$GOARCH/ 或当前路径中的相对路径
  正确的姿势：
   ```go
@@ -57,7 +57,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   ```
   >注意这里在导入包的时候包名需要以双引号引起来 ""
   
- 3. 声明包  import fmt
+3. 声明包  import fmt
   * 使用package关键字声明当前源文件所在的包
   * 包声明语句是所有源文件的第一行非注释语句
   * 包名称中不能包含空白字符
@@ -80,7 +80,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
   ```
 
- 4. 打印 fmt.Println
+4. 打印 fmt.Println
   ```go
    package main
    import (
