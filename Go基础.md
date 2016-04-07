@@ -22,7 +22,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
 # 语法
 
-  1. 注释   
+1. 注释   
   ```go
    package main
    import (
@@ -35,7 +35,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
      */
      // 行注释
    }
-      
+  ```    
  2. 导入包  package main
   * 导入路径是对应包在 $GOROOT/pkg/$GOOS_$GOARCH/、$GOPATH/pkg/$GOOS_$GOARCH/ 或当前路径中的相对路径
  正确的姿势：
