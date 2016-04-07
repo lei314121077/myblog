@@ -88,7 +88,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
    )
    
    func main(){
-     fmt,PrintLn("see your agin !")      //换行打印
+     fmt.PrintLn("see your agin !")      //换行打印
      fmt.Print("see your agin!")         //普通打印
    }
   ```
