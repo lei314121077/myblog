@@ -1,26 +1,26 @@
 # myblog 我的个人博客
 
 # 编程基础
-## [协议]()
-## [内存]()
-## [概念]()
-## [面向过程编程]()
-## [面向对象编程]()
-## [函数式编程]()
+* [协议]()
+*  [内存]()
+*  [概念]()
+*  [面向过程编程]()
+*  [面向对象编程]()
+*  [函数式编程]()
 
 # git 版本管理（工欲善其事，必先利其器）
-## [git基础]()
-## [git进阶]()
+*  [git基础]()
+*  [git进阶]()
 
 # python
-## [python 基础]()
-## [python 进阶]()
+*  [python 基础]()
+*  [python 进阶]()
 *  [同步or已补]()
 *  [线程or多线程]()
 *  [Socket]()
 
-## [python 高阶函数]()
-## [python 模块包]()
+*  [python 高阶函数]()
+*  [python 模块包]()
 * [Celery(任务调度)]()
 * [Pymongo]()
 * [Redis]()
@@ -36,7 +36,7 @@
 
 ## [python my tools]()
 # Openerp
-## [openerp回忆录](https://github.com/lei314121077/myblog/blob/master/openERP.md)
+*  [openerp回忆录](https://github.com/lei314121077/myblog/blob/master/openERP.md)
 
 # Go 
 * [Go基础]()
