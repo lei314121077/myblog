@@ -1,7 +1,7 @@
 # OpenERP应用系统架构
 ##数据库服务器 ------M
   OpenERP采用开源数据库服务器，PostgreSQL database server。在 OpenERP 中,用户界面不是通过 HTML 或其他程序代码生成,而是直接存放
-  在数据库中。运行时直接从数据库中�取出数据,然后渲成需要的界面，也就是我们长说的View视图。
+  在数据库中。运行时直接从数据库中取出数据,然后渲成需要的界面，也就是我们长说的View视图。
   
 ##OpenERP应用服务器 ------C
   应用服务包含所有的业务逻辑代码。以及简单的CRUD, 即新增Create、获取Retrieve、更新Update、删除Delete操作，和复杂的条件过滤与查
