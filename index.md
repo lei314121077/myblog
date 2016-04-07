@@ -39,7 +39,7 @@
 *  [openerp回忆录](https://github.com/lei314121077/myblog/blob/master/openERP.md)
 
 # Go 
-* [Go基础]()
+* [Go基础](https://github.com/lei314121077/myblog/blob/master/Go%E5%9F%BA%E7%A1%80.md)
 * [Go进阶]()
 * [Go并发编程实战]()
 
