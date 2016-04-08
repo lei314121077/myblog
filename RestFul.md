@@ -7,7 +7,7 @@
 
 # REST约束
 REST架构风格最重要的架构约束有6个
-  *客户-服务器（Client-Server）
+  * 客户-服务器（Client-Server）
   > 通信只能由客户端单方面发起，表现为请求-响应的形式。
 
   * 无状态（Stateless）
