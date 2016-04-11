@@ -148,8 +148,29 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   ```
   
 6. 变量 
-      
+  * 在Go语言中，声明变量的正确姿势是使用 *var* 关键字，而无需赋初始值。 
+  正确的姿势:
+  ```go
+  
+  var i int        // i = 0   默认为0
+  var s string     // s = ""  默认为空字符串，不为NULL即Go当中的Nil    
+  var e error      // e = nil, error是Go的内建接口类型。
+  
+  var a,b,c int    // a, b, c = 0 var 还可以声明一个变量列表，类型放在变量名的后面
+  var (
+    a int          // a = 0
+    b string       // b = ""
+    c uint         // c= 0
+  )
+  
+  ```
+  
+  > 1、这里需要注意在Go中的string是值类型，默认零值是空串 "" 或 ``，不存在nil(null)值  
+  
+  
+  
 7. 常量
+8. 
   
 8. 数组
 
@@ -184,8 +205,29 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
 # 函数 Function
 
-## 
-  
+## 函数声明 Declare
+
+## 函数闭包 Closure
+
+## 内建函数 Builtin
+
+## 初始化函数 init
+
+## 方法 Method
+
+# 并发 Concurrency
+
+# 测试 Testing
+
+## 单元测试 Unit
+
+## 基准测试 Benchmark
+
+
+
+# Web 基础回顾
+
+
   
   
   
