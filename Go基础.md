@@ -186,7 +186,92 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   
   
 7. 常量  Constant
-
+  * 常量可以是字符、字符串、布尔或数值类型的值，数值常量是高精度的值
+    ```go
+      const x int = 3
+      const y,z int  = 1, 2
+      const (
+        a byte = 'A'
+        b string = "B"
+        c bool = true
+        d int = 4
+        e float32 = 5.1
+        f complex64 = 6 + 6i
+      )
+      const a = 0        // a int
+    ```
+    
+    * 根据常量值自动推导类型
+    
+    ```go
+      const (
+        b = 2.3             // b float64
+        c = true            // c bool
+        d = len("asdf")     // d = 4
+        e                   // e = 4 常量组内定义的常量只有名称时，其值会根据上一次最后出现的常量表达式计算相同的类型与值
+        f                   // f = 4
+        g,h,i = 7,8,9       // 复用表达式要一一对应
+        x,y,z               // x = 7, y = 8, z = 9
+      )
+    
+    ```
+    > 常量组内定义的常量只有名称时，其值会根据上一次最后出现的常量表达式计算相同的类型与值。
+    
+    * 自动递增枚举常量 iota
+    
+      > iota的枚举值可以赋值给数值兼容类型
+      每个常量单独声明时，iota不会自动递增，只有当iota每次被引用或组合声明时才会逐步自增，初始值为0，自增值为1
+    
+    ```go
+      const a int = iota        // a = 0
+      const b int = iota        // b = 0
+      const c byte = iota       // c = 0
+      const d uint64 = iota     // d = 0
+    ```
+    > 常量组合声明时，iota每次引用会逐步自增，初始值为0，自增值为1
+    ```go
+      const (
+         a uint8 = iota        // a = 0
+         b int16 = iota        // b = 1
+         c rune = iota         // c = 2
+         d float64 = iota      // d = 3
+         e uintptr = iota      // e = 4
+      )
+    ```
+    > 即使iota不是在常量组内第一个开始引用，也会按组内常量数量递增
+    ```go
+      const (
+          a = "A"
+          b = 'B'
+          c = iota    // c = 2
+          d = "D"
+          e = iota    // e = 4
+      )
+    ```
+    > 枚举的常量都为同一类型时，可以使用简单序列格式(组内复用表达式).
+    ```go
+      const (
+        a = iota     // a int32 = 0
+        b            // b int32 = 1
+        c            // c int32 = 2
+      )
+    ```
+    > 枚举序列中的未指定类型的常量会跟随序列前面最后一次出现类型定义的类型.
+    ```go
+      const (
+        a byte = iota    // a uint8 = 0
+        b                // b uint8 = 1
+        c                // c uint8 = 2
+        d rune = iota    // d int32 = 3
+        e                // e int32 = 4
+        f                // f int32 = 5
+      )
+    ```
+    > iota自增值只在一个常量定义组合中有效，跳出常量组合定义后iota初始值归0
+    
+    
+    
+  * 根据常量值自动推导类型
   
 8. 数组 Array
 
