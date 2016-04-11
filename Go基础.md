@@ -20,11 +20,44 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 * 不支持泛型编程
 
 # 数据类型
-<table>
-  <tr>
-    <td></td>
-  </tr>
-</table>
+## 基础数据类型
+  <table>
+    <tr>
+      <td>类型</td><td>取值范围</td><td>默认值</td><td>类型</td><td>取值范围</td><td>默认值</td>
+    </tr>
+    <tr>
+      <td>int</td><td>int32,int64</td><td>0</td><td>uint</td><td>uint32,uint64</td><td>0</td>
+    </tr>
+    <tr>
+      <td>int8</td><td>-27 ~ 27-1</td><td>0</td><td>uint8,byte</td><td>0 ~ 28-1</td><td>0</td>
+    </tr>
+    <tr>
+      <td>int16</td><td>-215 ~ 215-1</td><td>0</td><td>uint16</td><td>0 ~ 216-1</td><td>0</td>
+    </tr>
+    <tr>
+      <td>int32,rune</td><td>-231 ~ 231-1</td><td>0</td><td>uint32</td><td>uint32</td><td>0</td>
+    </tr>
+    <tr>
+      <td>int64</td><td>-263 ~ 263-1</td><td>0</td><td>uint64</td><td>0 ~ 264-1</td><td>0</td>
+    </tr>
+    <tr>
+      <td>float32</td><td>IEEE-754 32-bit</td><td>0.0</td><td>float64</td><td>IEEE-754 64-bit</td><td>0.0</td>
+    </tr>
+    <tr>
+      <td>complex64</td><td>float32+float32i</td><td>0 + 0i</td><td>complex128</td><td>float64+float64i</td><td>0 + 0i</td>
+    </tr>
+    <tr>
+      <td>bool</td><td>true,false</td><td>false</td><td>string</td><td>"" ~ "∞"</td><td>"",``</td>
+    </tr>
+    <tr>
+      <td>uintptr</td><td>int32,int64</td><td>0</td><td>error</td><td>-</td><td>nil</td>
+    </tr>
+  </table>
+
+  > byte 是 uint8 的别名
+  rune 是 int32 的别名，代表一个Unicode码点
+  int与int32或int64是不同的类型，只是根据架构对应32/64位值
+  uint与uint32或uint64是不同的类型，只是根据架构对应32/64位值 
 
 # 语法
 
