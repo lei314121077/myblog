@@ -428,6 +428,56 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
     ```
   
 10. 字典 Map
+  * map是引用类型，使用内置函数 make进行初始化，未初始化的map零值为 nil长度为0，并且不能赋值元素
+  正确的声明姿势:
+  ```go
+    //方式1  未赋值
+    var dict1 map[int]int
+    dict1[0] = 0
+    
+    //方式2  赋值
+    var dict2 map[int]int = make(map[int]int)
+    dict2[0] = 0                              // 插入或修改元素
+    fmt.Printf("type: %T\n", dict2)           // map[int]int
+    fmt.Printf("value: %#v\n", dict2)         // map[int]int(0:0)
+    fmt.Printf("value: %v\n", dict2)          // map[0:0]
+    fmt.Println("is nil: ", nil == dict2)     // false
+    fmt.Println("length: ", len(dict2))       // 1
+
+    //方式3  直接赋值初始化map
+    m := map[int]int{
+      0:0,
+      1:1,                                  // 最后的逗号是必须的
+    }
+    n := map[string]S{
+      "a":S{0,1},
+      "b":{2,3},                            // 类型名称可省略
+    }
+  ```
+  map的增加、读取、修改、删除操作
+  
+  ```go
+    dict :=  map[string]S{
+      "a":"hello",
+      "b":"world",
+    }
+    
+    dict["a"]             //读取dict中key值为"a"的元素的值。
+    dict["c"] = "ok"      //向dict中添加key值为“c”，values值为“ok”的值。
+    dict["b"] = "kitty"   //替换dict中key值为"b"的元素的值。
+    delete(dict, "c")     //删除dict中key值为“c”的元素的值。
+    
+  ```
+  
+  
+  使用map过程中需要注意的几点：
+  > 1. map是无序的，每次打印出来的map都会不一样，它不能通过index获取，而必须通过key获取
+  > 2. map的长度是不固定的，也就是和slice一样，也是一种引用类型
+  > 3. 内置的len函数同样适用于map，返回map拥有的key的数量
+  > 4. map的值可以很方便的修改，通过numbers["one"]=11可以很容易的把key为one的字典值改为11
+  > 5. map和其他基本型别不同，它不是thread-safe，在多个go-routine存取时，必须使用mutex lock机制
+
+  map的初始化可以通过key:val的方式初始化值，同时map内置有判断是否存在key的方式
 
 11. 结构体 Struct
 
