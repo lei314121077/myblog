@@ -1,4 +1,4 @@
-#  简介（为什么选择OpenERP以及ERP的商业价值）
+#  简介（为什么选择OpenERP以及OpenERP的商业价值）
 > ERP 软件很多,OpenERP 有什么优势呢。四个字概括,价廉物美。
 
 1 首先,OpenERP 是开源软件。ERP 软件实施的成本构成中,
