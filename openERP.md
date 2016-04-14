@@ -42,4 +42,155 @@
   * WebService，供网络调用接口。
   > 目前支持 Net-RPC、XML-RPC 两种
 
+# OpenERP功能和应用简介
+
+一、 OpenERP的功能模块
+    
+      *OpenERP*里面的功能模块有很多，我们可以在[OpenERP的官网](https://www.odoo.com/)直接看到，据说现在连APP都已经有了，2013年的时候我们开发的还只是全部都是网页端的，不瞎逼逼了，让我们来看看部分的功能模块吧。
+      
+      Enterprise Modules Management (企业管理模块)
+        *   Sales  (销售)
+        *   Purchase (购买)
+        *   Services Management （服务管理）
+        *   Invoicing （发票管理）
+        *   Point of Sales （POS机）
+      
+      Logistics(物料管理模块)
+        *   Warehouse Management （仓库or仓储）
+        *   Shipping Management   （运算or航运）
+        *   Manufacturing         （生产）
+        *   Quality & Repairs     （质量与维修）
+        *   Products and pricelists （产品与价格）
+        
+      Accounting & Finance(财务管理)
+        * Accounting （会计）
+        * Analytic Accounting （会计分析）
+        * Budgets （预算）
+        * Payments Management （支付管理）
+        * Asset Management  （资产管理）
+        * Bank interfaces   （银行接口）
+        
+      Human Resources(人力资源管理) 
+        * Expenses  （支出or费用）
+        * Skills Management （技能管理or培训）
+        * Holidays  （假期管理）
+        * Attendances  （考勤管理）
+      
+      CRM & SRM (客户和供应商关系管理) 
+        * Customer Relationship Mgt   （客户关系管理）
+        * Mail Gateway  （邮件网关）
+        * Portals   （门户网站）
+        * Direct Marketing  （市场直销）
+        * Phone Calls （通讯录）
+        
+      Project Management(项目管理) 
+        * Operational Management
+        * Financial Management
+        * Timesheets
+        
+      Daily Productivity(日常工作管理) 
+        * Integrated DMS
+        * Outlook/Thunderbird 
+        * Getting Things Done 
+        * Calendars
+        
+      Efficient Communication(沟通工具) 
+        * Wiki
+        * Webmail
+        * Dashboards
+        * Alerts
+        
+      Business Process Management(业务流程管理) 
+        * End-User Processes
+        * Workflow Engine
+        
+      Association Management 
+        * Membership
+        * Events Organization 
+        * Fund Raising
+      
+      IT Companies(IT 公司管理工具) 
+        * Bug Tracker
+        * Scrum Methodology
+        
+      Fully Customizable(灵活的定制化功能) 
+        * Report Designer
+        * View Editor
+        * Workflow Editor
+        * Configurable Actions
+      
+      Ergonomy
+        * Web & Application Interfaces 
+        * Gantt & Calendars
+        * Dynamic Graphs
+        * Integrated Documentation
+      
+      Flexible
+        * Modules System
+        * Web-Services
+      
+      eCommerce
+        * Integrated eCommerce 
+        * EDI Business Intelligence 
+        * Olap Database 
+        * Cube Designer
+        * Data Browser
+        
+      Miscelleanous Tools 
+        * Networks
+        * Ideas 
+        * Lunch 
+        * Voip
+
+# OpenERP开发简介
+  
+  > OpenERP采用Python代码实现，OpenERP的功能开发遵循彻底的MVC模式，也就是我们开发中常用到的Model、View、Controller。
+  
+  * Model 用户数据模型开发
+  
+  > 在 OpenERP 中,简单的对象, 你只要定义对象的各个字段,系统会自动为你创建数据库表,自动生成 CRUD 的数据库操作代码。因此,你不必另外在数据库中创建 Table,也不必写 Insert、Select、Delete、Update 等数据库操作 代码,这些都留给 OpenERP 帮你去搞定。
+  
+    ```python
+      class qingjia_qingjd(osv.osv):
+        _name = 'qingjia.qingjd'
+        _description = '请假单' 
+        _columns = {
+          'shenqr': fields.many2one('hr.employee', '申请人', required=True), 
+          'tians': fields.float('请假天数', required=True),
+          'kaisrq': fields.date('开始日期', required=True),
+          'shiyou': fields.text('请假事由'),
+          'active': fields.boolean('有效'),
+          'state': fields.selection([('draft','草稿'),('wait_prove','待批'),('proved','已批'),('rejected','被拒')], '状态', required=True)} 
+      qingjia_qingjd()
+    ```
+  
+  * View 用户界面开发
+  
+  > OpenERP 中,用户界面的开发不要写任何代码。它是用 XML 格式定义用户界面。
+
+    ```python
+      <record model="ir.ui.view" id="view_qingjd_tree"> 
+        <field name="name">请假单</field>
+        <field name="model">qingjia.qingjd</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+          <tree string="请假单">
+            <field name="shenqr" select="1"/>
+            <field name="tians" />
+            <field name="kaisrq" select="1"/> 
+            <field name="shiyou" />
+            <field name="state" select="1"/>
+          </tree> 
+        </field>
+      </record>
+      <!-- 表单视图 代码从略 -->
+  ```
+  
+  * Action (Controller) 控制器开发
+  
+  > Action也就是我们要讲的触发菜单的开发,在 OpenERP 中,叫做 Action,也就是 MVC 中的 C,Controller。OpenERP 的 Action 也不用写代码,是用 XML 定义的。
+
+
+
+
  
