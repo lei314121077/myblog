@@ -24,17 +24,22 @@
   
   OpenERP的应用服务架构最主要由以下几部分构成
   
-  * ORM，Object Relation Mapping，负责数据对象到数据库的访问。在 OpenERP 的业务对象中，你不必
+  * ORM
+  > Object Relation Mapping，负责数据对象到数据库的访问。在 OpenERP 的业务对象中，你不必
 写一行数据库访问代码，就自动具备 CRUD 的数据库访问功能。
   
-  * BMD，Base Module Distribution，是一个基础模块，必不可少。其他模块，你可以自己任意添加，开
+  * BMD
+  > Base Module Distribution，是一个基础模块，必不可少。其他模块，你可以自己任意添加，开
 源社区有超过 500 个以上的可用模块。
   
-  * Report Engine，负责生成各种报表。目前支持的报表格式有 PDF，OpenOffice，HTML 三种。
+  * Report Engine，负责生成各种报表。
+  > 目前支持的报表格式有 PDF，OpenOffice，HTML 三种。
   
-  * Workflow Engine，工作流引擎。支持任意复杂度的工作流，OE 的工作流使用 XML 格式文件定义，
+  * Workflow Engine，工作流引擎。
+  > 支持任意复杂度的工作流，OE 的工作流使用 XML 格式文件定义，
 目前也ᨀ供简单的图形化工作流编辑工具。
 
-  * WebService，供网络调用接口。目前支持 Net-RPC、XML-RPC 两种
+  * WebService，供网络调用接口。
+  > 目前支持 Net-RPC、XML-RPC 两种
 
  
