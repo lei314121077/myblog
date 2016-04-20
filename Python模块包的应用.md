@@ -4,14 +4,18 @@
   
   * 安装
   
-  ```
-    $ pip install virtualenv
-    $ sudo pip install virtualenv
-    $ easy_install virtualenv
+    ```shell
+      $ pip install virtualenv
+      $ sudo pip install virtualenv
+      $ easy_install virtualenv
     
-  ```
+    ```
   
-  * 正确的姿势
+  * 正确的姿势 (基本使用)
+  
+    ```shell
+      odoo git:(9.0)x     
+    ```
   
   * 觉醒（激活）
   
