@@ -4,6 +4,13 @@
   
   * 安装
   
+  ```
+    $ pip install virtualenv
+    $ sudo pip install virtualenv
+    $ easy_install virtualenv
+    
+  ```
+  
   * 正确的姿势
   
   * 觉醒（激活）
