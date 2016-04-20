@@ -115,10 +115,11 @@
       # pip --help
     ```
     
-    > Usage:   
+    <p>
+    Usage:   
         pip <command> [options]
        
-      Commands:
+    Commands:
         install                     安装包.
         uninstall                   卸载包.
         freeze                      按着一定格式输出已安装包列表
@@ -142,7 +143,10 @@
         --timeout <sec>             连接超时时间 (默认15秒).
         --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup.
         --cert <path>               证书. 
-
+    </p>
+    
+    [pip官方文档](https://pip.pypa.io/en/latest/installing/)
+    
 # Requests ()
 
 
