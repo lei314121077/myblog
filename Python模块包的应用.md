@@ -5,18 +5,16 @@
   * 安装
   
     ```python
-      # 在shell里面拍下下面命令行
       $ pip install virtualenv
       $ sudo pip install virtualenv
       $ easy_install virtualenv
-    
     ```
   
   * 正确的姿势 (基本使用)
   
+    创建一个名为odoo_test的目录, 假设你已经安装了odoo_test/bin/python, 然后创建了lib,includelib,include,bin目录,安装了pip
     ```python
-      #在shell输入下面命令
-      virtualenv odoo_test #创建一个名为odoo_test的目录, 假设你已经安装了odoo_test/bin/python, 然后创建了lib,includelib,include,bin目录,安装了pip
+      $ virtualenv odoo_test 
       
     ```
       1、lib, 所有安装的python库都会放在这个目录中的lib/pythonx.x/site-packages/下
@@ -25,36 +23,35 @@
   
   * 觉醒（激活）
   
+    激活当前virtualenv
     ```python
-       #激活当前virtualenv
-       source ./bin/activate  
+       $ source ./bin/activate  
     ```
   
   * 闭关 （关闭）
-    
+  
+    输入下面的命令后就会退出虚拟环境
     ```python
-      # 输入下面的命令后就会退出虚拟环境
-      deactivate
+      $ deactivate
     ```
   * 指定目标版本
   
-    2.7
+    创建目标版本为2.7的Pyton虚拟环境 
     ```python
-      #创建目标版本为2.7的Pyton虚拟环境 
-      virtualenv -p /usr/bin/python2.7 ENV2.7
+      $ virtualenv -p /usr/bin/python2.7 ENV2.7
     ```
   
-    3.4
+    创建目标版本为3.4的python虚拟环境
     ```python
-      创建目标版本为3.4的python虚拟环境
-      virtualenv -p /usr/local/bin/python3.4 ENV3.4
+      $ virtualenv -p /usr/local/bin/python3.4 ENV3.4
     ```
     
   * 生成可打包的环境
+  
     某些特殊需求下,可能没有网络, 我们期望直接打包一个ENV, 可以解压后直接使用, 这时候可以使用virtualenv -relocatable指令将ENV修改为可更改位置的ENV
 
     ```python
-      #对当前已经创建的虚拟环境更改为可迁移
+      # 对当前已经创建的虚拟环境更改为可迁移
       ➜ ENV3.4 git:(master) ✗ virtualenv --relocatable ./
       Making script ./bin/easy_install relative
       Making script ./bin/easy_install-3.4 relative
@@ -66,7 +63,7 @@
   * 帮助
   
     ```python
-      virtualenv -h
+      $ virtualenv -h
     ```
   [Virtualenv官网文档](http://virtualenv.readthedocs.org/)
   
@@ -86,29 +83,38 @@
     
   * 正确的姿势
     
-    ```python
-      # 查看已安装的Python模块包
-      pip list
 
-      # 安装包
-      pip install *package-name*
-
-      # 移除包
-      pip uninstall *package-name*
-      
-      #更新包
-      pip install -U *package-name*  
-      
-      #包升级
-      pip install --upgrade *package-name*  
-      
-      #查看待更新的包
-      pip list --outdate
-      
-      # 帮助
-      # pip --help
-
+    查看已安装的Python模块包以及版本号列表
     ```
+      pip list
+    ```
+    
+    安装包
+    ```
+      pip install *package-name*
+    ```
+    
+    移除包
+    ```
+      pip uninstall *package-name*
+    ```  
+    更新包
+    ```
+      pip install -U *package-name*  
+    ```
+    包升级
+    ```
+      pip install --upgrade *package-name*  
+    ```
+    查看待更新的包
+    ```
+      pip list --outdate
+    ```
+    帮助
+    ```
+      # pip --help
+    ```
+    
     > Usage:   
         pip <command> [options]
        
