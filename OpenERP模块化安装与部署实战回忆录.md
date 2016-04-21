@@ -31,8 +31,7 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
   > OpenERP 从 2002 年开始,历经 8 年发展,有报导的客户遍及全球 20 多个国家。大的客户有法国国家行政学校,有 1500 个用户。法国邮政,卢森堡银行,美国最大的白色家电公司惠而浦等。有报导的行业有,金融保险、生产制造、食品、服务业、教育、娱乐、
 书店、在线拍卖等。
 
-注:关于 [Python和Java开发效率的详细对比,您可以查看这里:](http://www.developertutorials.com/tutorials/python/python-and-java-a-side-by-side-comparison-8-01-13/pag
-e1.html)
+注:关于 [Python和Java开发效率的详细对比,您可以查看这里:](http://www.developertutorials.com/tutorials/python/python-and-java-a-side-by-side-comparison-8-01-13/page1.html)
 
 # 下载
  首先要熟悉OpenERP必须先它的源码下下来，然后再进行安装，整个安装过程大概需要半个小时左右。
