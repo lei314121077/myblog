@@ -45,3 +45,33 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
 
 # 部署
 
+# 异常处理
+* [Errno 98] Address already in use
+  ```
+   $ ps -ef
+   $ ps -ef | grep openerp-server
+   
+   #查看对应的python端口
+   $ ps -ef | grep openerp-server
+   
+   pc       6399  2391  0 14:06 pts/1    00:00:02 python ./openerp-server
+   pc       7488  2391  0 14:39 pts/1    00:00:00 grep --color=auto openerp-server
+   
+   # kill掉然后重新启动
+   $ sudo kill -9 -6399 
+   
+   $ sudo ./openerp-server
+ ```
+* role "root" does not exist  角色不存在
+  ```
+   sudo su - postgres -c "createuser -s root"
+  ```
+*  不存在-某某包异常
+ ```
+  #方法1
+  $ sudo pip install package
+  #方法2
+  $ sudo apt-get instal python-package
+ ```
+
+
