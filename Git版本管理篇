@@ -6,29 +6,27 @@
   
 ## 操作
 
-  * 安装
+* 安装
   
-    ```
-      # linux or macosx
-      $ sudo apt-get install git
-      
-    ```
+  ```
+    # linux or macosx
+    $ sudo apt-get install git
+  ```
     
-  * 创建版本库
+* 创建版本库
     
-    ```
-     
-      # 新建一个文件夹
+  ```
+    # 新建一个文件夹
       
-      $ mkdir oerp
+    $ mkdir oerp
     
-      #去到文件夹目录
+    #去到文件夹目录
       
-      $ cd oerp
+    $ cd oerp
       
-      # 创建一个Git可托管的版本仓库,它会自动生成.git的目录，这个目录是Git用来跟踪管理版本库的，这里跟SVN不一样的是它只在
-      # 根目录才会生成.git/等文件
+    # 创建一个Git可托管的版本仓库,它会自动生成.git的目录，这个目录是Git用来跟踪管理版本库的，这里跟SVN不一样的是它只在
+    # 根目录才会生成.git/等文件
       
-      $ git init
+    $ git init
     
-    ```
+  ```
