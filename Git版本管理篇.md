@@ -206,12 +206,11 @@
   
   ```  
     
-    > 下述转载自:Git版本控制系统(2)开branch分支和操作远端
+  下述转载自:Git版本控制系统(2)开branch分支和操作远端
     
-    <p>
-    Straight merge 预设的合并模式，会有全部的被合并的branch commits 记录加上一个merge-commit，看线图会有两条Parents 线，并保留所有commit log。 Squashed commit 压缩成只有一个merge-commit，不会有被合并的log。SVN 的merge 即是如此。 cherry-pick 只合并指定的commit rebase 变更branch 的分支点：找到要合并的两个branch 的共同的祖先，然后先只用要被merge 的branch 来commit 一遍，然后再用目前branch 再commit 上去。这方式仅适合还没分享给别人的local branch，因为等于砍掉重练commit log。
-    指令操作:
-    </p>
+  *Straight merge 预设的合并模式，会有全部的被合并的branch commits 记录加上一个merge-commit，看线图会有两条Parents 线，并保留所有commit log。 Squashed commit 压缩成只有一个merge-commit，不会有被合并的log。SVN 的merge 即是如此。 cherry-pick 只合并指定的commit rebase 变更branch 的分支点：找到要合并的两个branch 的共同的祖先，然后先只用要被merge 的branch 来commit 一遍，然后再用目前branch 再commit 上去。这方式仅适合还没分享给别人的local branch，因为等于砍掉重练commit log。*
+  
+  指令操作:
     
   ```
     git merge <branch_name>          # 合并另一个branch，若没有conflict 冲突会直接commit。
