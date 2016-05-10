@@ -220,6 +220,85 @@
     git cherry-pick 321d76f          # 只合并特定其中一个commit。如果要合并多个，可以加上-n
                                        指令就不会先帮你commit，这样可以多pick几个要合并的commit，最后再git commit 即可。
   ```
+# 查看所有commont记录
+
+  ```
+    $ git blame filename                   # 关于此档案的所有commit 纪录
+  ```
+  
+# 查看已删除的档案
+
+  ```
+    $ git ls-files -d                      # 查看已删除的档案
+    $ git ls-files -d | xargs git checkout --  # 将已删除的档案还原
+  ```
+
+# 整理档案
+  
+  ```
+  git gc                               # 整理前和整理后的差异, 可由: git count-objects 看到.
+  git fsck --full
+  ```
+# git patch 操作
+
+  ```
+    $ git format-patch -1                  # 提取最近的一个提交,生成patch文件.
+    $ git format-patch  master             # 如果站在develop分支上,将与master不同的分支列出来
+    $ git am <patch name>                  # 针对format-patch生成的patch.
+    $ git apply <patch name>               # 针对传统的diff命令生成的patch.但可以也打format-patch.
+  ```
+
+# git revert操作
+
+  ```
+    $ git revert HEAD                      # 回到前一次commit 的状态
+    $ git revert HEAD^                     # 回到前前一次commit 的状态
+    $ git reset HEAD filename              # 从staging area 状态回到unstaging 或untracked (档案内容并不会改变)
+    $ git checkout filename                # 从unstaging 状态回到最初Repository 的档案(档案内容变回修改前)
+  ```
+  
+# git RollBck操作
+
+  ```
+    $ git reset --soft HEAD^           # 对文件进行编辑,完成后执行:
+    $ git add filename
+    $ git commit -m 'rollback'
+    $ git commit -a --amend                # 可以用一个命令搞定.
+  ```
+
+# git remote操作
+  
+  与远端Repository相关:
+  
+  ```
+    $ git remote
+    $ git remote add new-branch http://git.example.com.tw/project.git  # 增加远端Repository 的branch(origin -> project)
+    $ git remote show                     # 秀出现在有多少Repository
+    $ git remote rm new-branch            # 删掉远程分支
+    $ git remote update                   # 更新所有Repository branch
+    $ git branch -r                       # 列出所有Repository branch
+  ```
+  
+  抓取/切换Repository的branch:
+  
+  ```
+    $ git fetch origin
+    $ git checkout --track -b reps-branch origin/reps-branch
+    # 抓取reps-branch, 并将此branch 建立于local 的reps-branch
+  ```
+  
+  将本地分支同步到远程的Repository的branch,如果远程没有分支将会新建一个分支:
+  
+  ```
+    $ git push origin [local-branch-name]:[remote-branch-name]
+  ```
+  
+  删除远程的Repository中的branch分支:
+  
+  ```
+    $ git branch -rD [branch-name]
+    $ git push origin :heads/[branch-name]
+  ```
 
 
 
