@@ -21,11 +21,11 @@
 * 查看Git
   
   ```
-  # 查看版本号
-  $ git --version
-  
-  # 查看git的帮助文档
-  $ git help 
+    # 查看版本号
+    $ git --version
+    
+    # 查看git的帮助文档
+    $ git help 
   ```
     
 
@@ -121,15 +121,15 @@
 * git比较目录或文件
   
   ```
-  $ git diff master                   # 与Master 有哪些资料不同
-  $ git diff --cached                 # 比较staging area 跟本来的Repository
-  $ git diff tag1 tag2                # tag1, 与tag2 的diff
-  $ git diff tag1:file1 tag2:file2    # tag1, 与tag2 的file1, file2 的diff
-  $ git diff                          # 比较目前位置与staging area
-  $ git diff --cached                 # 比较staging area 与Repository 差异
-  $ git diff HEAD                     # 比较目前位置与Repository 差别
-  $ git diff new-branch               # 比较目前位置与branch(new-branch) 的差别
-  $ git diff --stat
+    $ git diff master                   # 与Master 有哪些资料不同
+    $ git diff --cached                 # 比较staging area 跟本来的Repository
+    $ git diff tag1 tag2                # tag1, 与tag2 的diff
+    $ git diff tag1:file1 tag2:file2    # tag1, 与tag2 的file1, file2 的diff
+    $ git diff                          # 比较目前位置与staging area
+    $ git diff --cached                 # 比较staging area 与Repository 差异
+    $ git diff HEAD                     # 比较目前位置与Repository 差别
+    $ git diff new-branch               # 比较目前位置与branch(new-branch) 的差别
+    $ git diff --stat
   ```
 
 * git操作标签
@@ -139,7 +139,7 @@
     $ git tag -d v1                     # 把tag v1删掉.
   ```
 
-# git日志操作
+* git日志操作
 
   ```
     $ git log                           # 将所有log 秀出
@@ -160,7 +160,7 @@
     $ git log --pretty=format:'%h : %s' --topo-order --graph # 依照主分支排序
     $ git log --pretty=format:'%h : %s' --date-order --graph # 依照时间排序
   ```
-# git show 查看操作
+* git show 查看操作
   
   ```
     $ git show ebff                     # 查log 是commit ebff81 的内容
@@ -172,7 +172,7 @@
     $ git show HEAD~4                   # 前前前前一版修改的资料
   ```
 
-# git reset 还原或回退操作
+* git reset 还原或回退操作
 
   ```
     $ git reset --hard HEAD             # 还原到最前面
@@ -180,29 +180,29 @@
     $ git reset --soft HEAD~3
     $ git reset HEAD filename           # 从staging area 状态回到unstaging 或untracked (档案内容并不会改变)
   ```
-# git grep 查看操作
+* git grep 查看操作
   
   ```
     $ git grep "te" v1                  # 查v1 是否有"te" 的字串
     $ git grep "te"                     # 查现在版本是否有"te" 的字串
   ```
 
-# git stash操作
+* git stash操作
 
   ```
-  $ git stash                         # 丢进暂存区
-  $ git stash list                    # 列出所有暂存区的资料
-  $ git stash pop                     # 取出最新的一笔, 并移除.
-  $ git stash apply                   # 取出最新的一笔stash 暂存资料. 但是stash 资料不移除
-  $ git stash clear                   # 把stash 都清掉
+    $ git stash                         # 丢进暂存区
+    $ git stash list                    # 列出所有暂存区的资料
+    $ git stash pop                     # 取出最新的一笔, 并移除.
+    $ git stash apply                   # 取出最新的一笔stash 暂存资料. 但是stash 资料不移除
+    $ git stash clear                   # 把stash 都清掉
   ```
 
-# got merge 合并操作
+* got merge 合并操作
 
   ```
-    git merge
-    git merge master         # 合并到主分支
-    git merge new-branch
+    $  git merge
+    $  git merge master         # 合并到主分支
+    $  git merge new-branch
   
   ```  
     
@@ -213,33 +213,33 @@
   指令操作:
     
   ```
-    git merge <branch_name>          # 合并另一个branch，若没有conflict 冲突会直接commit。
+    $ git merge <branch_name>          # 合并另一个branch，若没有conflict 冲突会直接commit。
                                        若需要解决冲突则会再多一个commit。
-    git merge --squash <branch_name> # 将另一个branch 的commit 合并为一笔，特别适合需要做实
+    $ git merge --squash <branch_name> # 将另一个branch 的commit 合并为一笔，特别适合需要做实
                                        验的fixes bug 或new feature，最后只留结果。合并完不会帮你先commit。
-    git cherry-pick 321d76f          # 只合并特定其中一个commit。如果要合并多个，可以加上-n
+    $ git cherry-pick 321d76f          # 只合并特定其中一个commit。如果要合并多个，可以加上-n
                                        指令就不会先帮你commit，这样可以多pick几个要合并的commit，最后再git commit 即可。
   ```
-# 查看所有commont记录
+* 查看所有commont记录
 
   ```
     $ git blame filename                   # 关于此档案的所有commit 纪录
   ```
   
-# 查看已删除的档案
+* 查看已删除的档案
 
   ```
     $ git ls-files -d                      # 查看已删除的档案
     $ git ls-files -d | xargs git checkout --  # 将已删除的档案还原
   ```
 
-# 整理档案
+* 整理档案
   
   ```
-  git gc                               # 整理前和整理后的差异, 可由: git count-objects 看到.
-  git fsck --full
+    $ git gc                               # 整理前和整理后的差异, 可由: git count-objects 看到.
+    $ git fsck --full
   ```
-# git patch 操作
+* git patch 操作
 
   ```
     $ git format-patch -1                  # 提取最近的一个提交,生成patch文件.
@@ -248,7 +248,7 @@
     $ git apply <patch name>               # 针对传统的diff命令生成的patch.但可以也打format-patch.
   ```
 
-# git revert操作
+* git revert操作
 
   ```
     $ git revert HEAD                      # 回到前一次commit 的状态
@@ -257,7 +257,7 @@
     $ git checkout filename                # 从unstaging 状态回到最初Repository 的档案(档案内容变回修改前)
   ```
   
-# git RollBck操作
+* git RollBck操作
 
   ```
     $ git reset --soft HEAD^           # 对文件进行编辑,完成后执行:
@@ -266,7 +266,7 @@
     $ git commit -a --amend                # 可以用一个命令搞定.
   ```
 
-# git remote操作
+* git remote操作
   
   与远端Repository相关:
   
@@ -300,7 +300,7 @@
     $ git push origin :heads/[branch-name]
   ```
 
-# 增加远程服务器
+* 增加远程服务器
 
   ```
     $ git remote add master git-url
@@ -309,7 +309,7 @@
     $ git pull origin
   ```
 
-# 更新上次commit信息
+* 更新上次commit信息
 
   在实际的使用中,会常常遇到这个的问题.我们已经commit了,但没有push到远程git库里.但是又修改了,只需要将这次的修改增加到上次我们commit里. 可以用下面的命令:
   
@@ -318,19 +318,19 @@
     $ git commint --amend
   ```
 
-# git cherry-pick
+* git cherry-pick
   
   将别的分支上的提交拿到自己的分支上来
   
   ```
-  $ git cherry-pick  [HASH值]                # 将这个patch合并到这个分支上来,重新生成HASH值.
+    $ git cherry-pick  [HASH值]                # 将这个patch合并到这个分支上来,重新生成HASH值.
   ```
 
-# git clean
+* git clean
   
   清除没有在GIT库中的文件
   
   ```
-  $ git clean -nd                       # 查看当前多的文件和目录或将要被删除的文件和目录.
-  $ git clean -fd                       # 将多的文件和目录从git目录里删除.
+    $ git clean -nd                       # 查看当前多的文件和目录或将要被删除的文件和目录.
+    $ git clean -fd                       # 将多的文件和目录从git目录里删除.
   ```
