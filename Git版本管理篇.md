@@ -318,5 +318,19 @@
     $ git commint --amend
   ```
 
+# git cherry-pick
+  
+  将别的分支上的提交拿到自己的分支上来
+  
+  ```
+  $ git cherry-pick  [HASH值]                # 将这个patch合并到这个分支上来,重新生成HASH值.
+  ```
 
-* 提交文件到远程托管 
+# git clean
+  
+  清除没有在GIT库中的文件
+  
+  ```
+  $ git clean -nd                       # 查看当前多的文件和目录或将要被删除的文件和目录.
+  $ git clean -fd                       # 将多的文件和目录从git目录里删除.
+  ```
