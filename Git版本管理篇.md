@@ -300,8 +300,23 @@
     $ git push origin :heads/[branch-name]
   ```
 
+# 增加远程服务器
 
+  ```
+    $ git remote add master git-url
+    $ git fetch master
+    $ git push master master
+    $ git pull origin
+  ```
 
+# 更新上次commit信息
+
+  在实际的使用中,会常常遇到这个的问题.我们已经commit了,但没有push到远程git库里.但是又修改了,只需要将这次的修改增加到上次我们commit里. 可以用下面的命令:
+  
+  ```
+    $ git add modified filename
+    $ git commint --amend
+  ```
 
 
 * 提交文件到远程托管 
