@@ -55,6 +55,11 @@
     $ git add -u                        # 只加修改过的档案, 新增的档案不加入.
     $ git add -i                        # 进入互动模式
   ```
+* git 第一次推送
+
+  ```
+    $ git push -u origin master        #第一次推送到主分支上
+  ```
   
 * 用git 删除文件
   
