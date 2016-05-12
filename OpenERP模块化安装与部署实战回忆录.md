@@ -88,6 +88,7 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
 # PostgresSQL
 
   * 乱七八糟
+  
    1，安装命令：sudo apt-get install postgresql
    2，安装完后，切换到postgres用户：sudo su postgres
    3，创建新的用户账户：createuser oe
@@ -102,6 +103,7 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
    12，重启数据库服务：sudo /etc/init.d/postgresql restart
 
 [参考](http://www.3e3c.com/erp/odoo/119.html)      
+
 说明：在进行数据库配置的时候一定注意连接权限和密码验证的修改，不修改的话是不能进行远程连接的。你可以用pgAdminIII或者一些数据库连接工具进行连接测试，能连接上说明配置成功。
 
 
