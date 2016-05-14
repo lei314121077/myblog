@@ -69,13 +69,18 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
    $ sudo ./openerp-server
  ```
 * role "root" does not exist  角色不存在
+ 
   ```
+   # 创建不存在的用户
    sudo su - postgres -c "createuser -s root"
   ```
+
 *  不存在-某某包异常
+ 
  ```
   #方法1
   $ sudo pip install package
+  
   #方法2
   $ sudo apt-get instal python-package
  ```
@@ -83,18 +88,31 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
 # PostgresSQL
 
   * 乱七八糟
-      1，安装命令：sudo apt-get install postgresql
-      2，安装完后，切换到postgres用户：sudo su postgres
-      3，创建新的用户账户：createuser oe
-      4，进入数据库：psql template1
-      5，修改用户密码：alter role oe with password '123456';      //注意不要忘了分号
-      6，退出数据库编辑：\q
-      7，打开数据库配置文件：sudo nano /etc/postgresql/9.1/main/postgresql.conf
-      8，修改连接权限：#listen_addresses = ‘localhost’改为 listen_addresses = ‘*’
-      9，启用密码验证：#password_encryption = on改为password_encryption = on
-      10，打开pg_hba.conf：sudo nano /etc/postgresql/9.1/main/pg_hba.conf
-      11，在末尾加上可访问ip段：host all all 0.0.0.0 0.0.0.0 md5
-      12，重启数据库服务：sudo /etc/init.d/postgresql restart
+  
+   1，安装命令：sudo apt-get install postgresql
+
+   2，安装完后，切换到postgres用户：sudo su postgres
+
+   3，创建新的用户账户：createuser oe
+
+   4，进入数据库：psql template1
+
+   5，修改用户密码：alter role oe with password '123456';      //注意不要忘了分号
+
+   6，退出数据库编辑：\q
+
+   7，打开数据库配置文件：sudo nano /etc/postgresql/9.1/main/postgresql.conf
+
+   8，修改连接权限：#listen_addresses = ‘localhost’改为 listen_addresses = ‘*’
+
+   9，启用密码验证：#password_encryption = on改为password_encryption = on
+
+   10，打开pg_hba.conf：sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+
+   11，在末尾加上可访问ip段：host all all 0.0.0.0 0.0.0.0 md5
+
+   12，重启数据库服务：sudo /etc/init.d/postgresql restart
+
 [参考](http://www.3e3c.com/erp/odoo/119.html)      
 说明：在进行数据库配置的时候一定注意连接权限和密码验证的修改，不修改的话是不能进行远程连接的。你可以用pgAdminIII或者一些数据库连接工具进行连接测试，能连接上说明配置成功。
 
