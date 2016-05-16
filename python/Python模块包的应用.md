@@ -149,17 +149,24 @@
     
     [pip官方文档](https://pip.pypa.io/en/latest/installing/)
     
+    
 # Requests 
+
   [参考](http://cn.python-requests.org/zh_CN/latest/)
   
 
 # UrlLib & UrlLib2
+  
+  [参考](https://docs.python.org/3/library/urllib.request.html)
+  
 
 # 用ET包解析XML
-  [ET解析参考](https://docs.python.org/3/library/xml.etree.elementtree.html)
+
+  [参考](https://docs.python.org/3/library/xml.etree.elementtree.html)
   
 # Json包 
-  [2.7版json解析参考](https://docs.python.org/2/library/json.html)
+
+  [2.7版参考](https://docs.python.org/2/library/json.html)
 
 
 
