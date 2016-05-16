@@ -79,11 +79,24 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
  
  ```
   #方法1
-  $ sudo pip install package
+  $ sudo pip install package_name
   
   #方法2
-  $ sudo apt-get instal python-package
+  $ sudo apt-get instal python-package_name
+  
+  #方法3
+  $ sudo easy_install package_name
  ```
+* 更新包模块版本和删除包模块
+ 
+ ```
+ #方法1
+ $ sudo easy_install -U package_name
+ 
+ #方法2
+ $sudo pip install -U package_name
+ ```
+ [可参考](https://blog.phpgao.com/pip-easy_install-setuptool.html)
 
 # PostgresSQL
 
