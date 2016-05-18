@@ -169,6 +169,6 @@
   [2.7版参考](https://docs.python.org/2/library/json.html)
 
 # PyMongo应用
-  结合MongoDB
+  结合MongoDB[参考](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/)
 
 
