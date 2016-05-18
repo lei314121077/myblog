@@ -138,3 +138,4 @@ REST与RPC的差别在于：
 
 > [理解本真的REST架构](http://www.infoq.com/cn/articles/understanding-restful-style)
 
+> [RESTful API 设计最佳实践](http://blog.jobbole.com/41233/)
