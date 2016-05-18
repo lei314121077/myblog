@@ -41,7 +41,7 @@
     def fun(*args **kwargs){
     
       print args, 'args_type = %s' % type(args)      #打印出来的类型是一个元组对象
-      priint kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
+      print kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
     
     }
     
