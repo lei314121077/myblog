@@ -31,7 +31,9 @@
   ## 重载
   
   ## 形参之 *args 和 **kwargs
+  
   * *args
+  
   * **kwargs
   
   
@@ -40,6 +42,14 @@
 
 
 #高阶函数
+
+## 容器
+
+  * 列表 list
+  
+  * 字典 dict
+  
+  * 元组  
 
 ## 迭代器(Iterable)
   
@@ -63,7 +73,10 @@
 ## 异常处理(Exception)
 
   ```python
+  
   ```
+## 匿名函数 (lambda)
+
 ## 切片
 
 ## 排序 (Sort)
