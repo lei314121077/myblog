@@ -189,8 +189,4 @@
   * Action (Controller) 控制器开发
   
   > Action也就是我们要讲的触发菜单的开发,在 OpenERP 中,叫做 Action,也就是 MVC 中的 C,Controller。OpenERP 的 Action 也不用写代码,是用 XML 定义的。
-
-
-
-
  
