@@ -97,6 +97,13 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
  $sudo pip install -U package_name
  ```
  [可参考](https://blog.phpgao.com/pip-easy_install-setuptool.html)
+ 
+ * Could not execute command 'lessc   "不能执行Lessc"
+  ```
+   #缺少node-less 包,安装完之后 sudo ./openerp-server
+   $sudo apt-get install node-less
+   
+  ```
 
 # PostgresSQL
 
