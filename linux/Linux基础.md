@@ -15,14 +15,14 @@
  ```
 
 
- * sudo & yum 提权
+ * sudo 提权
  
  ```
   # centos 系列
-  $ yum 
+  $ sudo yum install package-name
   
   # ubuntu osx系列
-  $ sudo 
+  $ sudo apt-get install package-name
  ```
  * cd
  
