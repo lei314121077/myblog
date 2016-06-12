@@ -15,15 +15,15 @@
 
     2.再到shell输入下面这条命令，p拍Enter键
     
-    ```
-      $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
-    ```
+      ```
+        $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+      ```
     3.ok后再输入这条命令，按Enter键
     
-    ```
-      $ brew cask install liteide
-    ```
-    [参考] (http://macappstore.org/liteide/)
+      ```
+        $ brew cask install liteide
+      ```
+      [参考] (http://macappstore.org/liteide/)
     
   * install LiteIDE on Linux Ubuntu 14.04
   
