@@ -27,6 +27,7 @@
     
   * install LiteIDE on Linux Ubuntu 14.04
   
+    安装情况可以[参考这里](http://studygolang.com/articles/3267)
     
 
   * install LiteIDE on Windows
