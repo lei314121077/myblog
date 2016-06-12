@@ -12,7 +12,6 @@
       ```
         $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       ```
-
     2.再到shell输入下面这条命令，p拍Enter键
     
       ```
