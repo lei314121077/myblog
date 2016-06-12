@@ -6,7 +6,6 @@
   
   * nstall LiteIDE on Mac OSX
   
-  
     1. 打开shell命令行，首先安装好home brew,可以在 [这里] (http://brew.sh/) 查看怎么安装。
     
     2.再到shell输入下面这条命令，p拍Enter键
