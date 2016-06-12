@@ -3,7 +3,7 @@
 ## mac osx 安装 IDE
 
   这里我选择的是用*LITEIDE*,而我的笔记本上装的是双系统，linux和Windows，公司和我的个人台式机都是MAC OSX，然而如果我们是用
-  包安装的话可以在[这里下载] （可以在这里 [下载] (http://golangtc.com/download/liteide) 包
+  包安装的话可以在[这里下载](http://golangtc.com/download/liteide) 包
   
   * install LiteIDE on Mac OSX
   
