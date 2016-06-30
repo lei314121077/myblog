@@ -504,6 +504,20 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
 15. 自定义类型
   
+16.格式化输出字符串
+<table>
+<tr><td>%d</td> <td> 十进制整数</td></tr>
+<tr><td>%x, %o, %b</td><td>十六进制，八进制，二进制整数。</td></tr>
+<tr><td>%f, %g, %e</td><td>浮点数： 3.141593 3.141592653589793 3.141593e+00</td></tr>
+<tr><td>%t</td><td>布尔：true或false</td></tr>
+<tr><td>%c</td><td>字符（rune） (Unicode码点)</td></tr>
+<tr><td>%s</td><td> 字符串</td></tr>
+<tr><td>%q</td><td>带双引号的字符串"abc"或带单引号的字符'c'</td></tr>
+<tr><td>%v</td><td>变量的自然形式（natural format）</td></tr>
+<tr><td>%T</td><td>变量的类型</td></tr>
+<tr><td>%%</td><td>字面上的百分号标志（无操作数）</td></tr>
+</table>
+
 # 语句 Statement
 ## 分号/括号 ; {
 
