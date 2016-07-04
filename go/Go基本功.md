@@ -314,6 +314,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
     var arr [10]int  // 声明了一个int类型的数组
     arr[0] = 42      // 数组下标是从0开始的
     arr[1] = 13      // 赋值操作
+    
     fmt.Printf("The first element is %d\n", arr[0])  // 获取数据，返回42
     fmt.Printf("The last element is %d\n", arr[9]) //返回未赋值的最后一个元素，默认返回0
     
@@ -322,40 +323,48 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
     b := [10]int{1, 2, 3} // 声明了一个长度为10的int数组，其中前三个元素初始化为1、2、3，其它默认为0
     
     c := [...]int{4, 5, 6} // 可以省略长度而采用`...`的方式，Go会自动根据元素个数来计算长度
+    
+    //当然你也可以像这样，或许会更省事
+    var arr1 = []int{1,2,3,4,5}  
+    arr2 := []string{"a", "b", "c"}
+    
+    
+    
+    
   ```
   
   * 二维数组 & 嵌套数组
   
-  > 使用 *...* 自动计算数组的长度
-  
-    ```go
-  
-      var length = [...]int{1,2,3,4,5}
-      var a = [...]int{{1,2,3},{'a','b', 'c'},{'h','e','l','l','o'}}
+    > 使用 *...* 自动计算数组的长度
     
-      //多维数组只能自动计算最外围数组长度
-      x := [...][3]int{{0, 1, 2}, {3, 4, 5}}
-      y := [...][2][2]int{{{0,1},{2,3}},{{4,5},{6,7}}}
+      ```go
     
-      //跟其他语言类似譬如说，C、JAVA、PYTHON，GO也是通过下标的方式去访问数组元素的
-      fmt.Println(y[1][1][0])
-    
-      var arr = [5]{1，2，3，4，5}
-    
-      //range 关键字
-      for key, val := range arr{
-        fmt.PrintLn(key,val)  
-      }
-    
-    ```
-  >  未指定初始化的元素保持默认的零值
+        var length = [...]int{1,2,3,4,5}
+        var a = [...]int{{1,2,3},{'a','b', 'c'},{'h','e','l','l','o'}}
+      
+        //多维数组只能自动计算最外围数组长度
+        x := [...][3]int{{0, 1, 2}, {3, 4, 5}}
+        y := [...][2][2]int{{{0,1},{2,3}},{{4,5},{6,7}}}
+      
+        //跟其他语言类似譬如说，C、JAVA、PYTHON，GO也是通过下标的方式去访问数组元素的
+        fmt.Println(y[1][1][0])
+      
+        var arr = [5]{1，2，3，4，5}
+      
+        //range 关键字 index 数组的下标，val下标所对应的值
+        for index, val := range arr{
+          fmt.PrintLn(index,val)  
+        }
+      
+      ```
+    >  未指定初始化的元素保持默认的零值
 
 9. 切片 Slice
   * slice 切片是对一个数组上的连续一段的引用，并且同时包含了长度和容量信息,因为是引用类型，所以未初始化时的默认零值是nil，长度与容量都是0. slice是一个引用类型。 slice总是指向一个底层array，slice的声明也可以像array一样，只是不需要长度。
   正确的姿势: 
   ```go
-    //  使用内置函数make初始化slice，第一参数是slice类型，第二参数是长度，第三参数是容量(省略时与长度相同)
-    var b = make([]int, 0)
+    //  使用内置函数make初始化slice，第一参数是slice类型，第二参数是长度，第三参数是容量(省略时默认容量等于长度)
+    var b = make([]int, 10, 5)
     fmt.Printf("%T\t%#v\t%d\t%d\n", b, b, len(b), cap(b))      // []int    []int{}    0    0
     
     var c = make([]int, 3, 10)
@@ -363,10 +372,22 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
 
     var a = new([]int)
     fmt.Printf("%T\t%#v\t%d\t%d\n", a, a, len(*a), cap(*a))  // *[]int    &[]int(nil)    0    0
+    
+    var arr1 = []int{1,2,3,4,5}
+    
+    //append（追加） 操作
+    arr_app := append(arr1, 6 ,7,8)
+    fmt.Println(arr1, arr_app)
+    
+    arr3 := []string{"a", "b", "c", "d"}
+    arr4 := []string{"hello", "kitty", "world"}
+    //copy（复制） 操作
+    fmt.Println(copy(arr3, arr4))
+    fmt.Println(arr3, arr4)
+    
   ```
   
-  1. cap()函数返回的是数组切片分配的空间大小。
-  
+  1. cap()函数返回的是数组切片分配的空间大小又叫做容量。
   2. len()函数返回的是数组长度的大小。
   3. append 向slice里面追加一个或者多个元素，然后返回一个和slice一样类型的slice
   4. copy 函数copy从源slice的src中复制元素到目标dst，并且返回复制的元素的个数
@@ -441,6 +462,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
       }
     
     ```
+    >  一旦slice的操作使用slice的容量超过原数组容量时候，对slice进行的任何操作都不再影响原数组。 而在容量未超过原数组容量时，对slice的任何操作都会影响到原数组。 
   
 10. 字典 Map
   * map是引用类型，使用内置函数 make进行初始化，未初始化的map零值为 nil长度为0，并且不能赋值元素
