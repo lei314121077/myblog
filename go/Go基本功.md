@@ -515,18 +515,21 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   > 5. map和其他基本型别不同，它不是thread-safe，在多个go-routine存取时，必须使用mutex lock机制
 
   map的初始化可以通过key:val的方式初始化值，同时map内置有判断是否存在key的方式
+11.函数 function
+* func  
 
-11. 结构体 Struct
 
-12. 指针 Pointer
+12. 结构体 Struct
 
-13. 通道 Channel
+13. 指针 Pointer
 
-14. 接口 Interface
+14. 通道 Channel
 
-15. 自定义类型
+15. 接口 Interface
+
+16. 自定义类型
   
-16.格式化输出字符串
+17.格式化输出字符串
 <table>
 <tr><td>%d</td> <td> 十进制整数</td></tr>
 <tr><td>%x, %o, %b</td><td>十六进制，八进制，二进制整数。</td></tr>
