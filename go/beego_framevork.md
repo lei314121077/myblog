@@ -1,10 +1,56 @@
 # 简介
+
+  beego 是一个快速开发 Go 应用的 HTTP 框架，他可以用来快速开发 API、Web 及后端服务等各种应用，是一个 RESTful 的框架，主要设计灵感来源于 tornado、sinatra 和 flask 这三个框架，但是结合了 Go 本身的一些特性（interface、struct 嵌入等）而设计的一个框架。且在一些比较大的网站例如youtube、360、有道、新浪、土豆、盛大、美团、腾讯都在用go来做服务器后台的一些开发。
+
+
 ## 为什么选Beego
-## 有什么优势
+
+  首先一个很重要的原因是在三年前，我就开始接触GO和Python当时带我的师傅（一个十几年开发经验的大牛“峰哥”）介绍下我开始接触，但是后面因为项目一直用的是Python以及自己创业就把对Go的研究一直拖勒一段日子，大概1年多的时间吧。选择Beego的原因有很多。
+  * tornado、flask这2个Python的WEB框架我本身就非常熟悉，且我主导的几个项目都是用Tornado来做分布式服务器后台的所以这算是一个原因。
+  * 支持国产，支持国产、支持国产。重要的事情说三遍！我是一个强烈的爱国主义者！！！
+  * 也是最重要的一点，性能、文档、资料各方面都比较多。
+  
 ## 对比
 
-# Bego基础
-
+    [参考](http://studygolang.com/topics/466)
+    
+    
 # Beego设计思路
+  
+  基本的设计思路是基于tornado、flask、sinatra的一些架构设计上的思路，然后集合GO语言本身设计出的一个http框架，主要应用领域包括api服务、服务器后台、任务调度、日志分发、游戏开发等领域。
+
+# Beego基础应用笔记
+  
+  ## 下载、安装
+  
+  *  Mac osx (前提是你需要先安装好了go)
+  
+    home brew 安装 go语言程序包
+    *  brew install go
+    
+    go语言安装包的形式安装Beego这个http框架
+    * go get github.com/astaxie/beego
+    
+  *  linux
+  *  
+    安装 go语言程序包
+    * sudo apt-get install go
+    
+    go语言安装包的形式安装Beego这个http框架
+    * go get github.com/astaxie/beego
+    
+  * windows
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
 
 
