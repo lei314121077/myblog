@@ -50,7 +50,20 @@
   
     go install  github.com/astaxie/beego   
   
+## bee 命令详解
+
+  * new 命令
+
+    new 命令是新建一个 Web 项目，我们在命令行下执行*bee new <项目名>*就可以创建一个新的项目。但是注意该命令必须在 $GOPATH/src 下执行。最后会在 $GOPATH/src 相应目录下生成如下目录结构的项目  
   
+  * api 命令 
+
+    上面的 new 命令是用来新建 Web 项目，不过很多用户使用 beego 来开发 API 应用。所以这个 api 命令就是用来创建 API 应用的，执行命令之后如 *bee api <项目名>*  同样，必须在$GOPATH/src相对应的目录下生成。
+    
+
+    
+  * 
+  * 
   
   
   
