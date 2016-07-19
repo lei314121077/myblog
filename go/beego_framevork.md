@@ -21,7 +21,7 @@
 
 # Beego基础应用笔记
   
-  ## 下载、安装
+## 下载、安装
   
   *  Mac osx (前提是你需要先安装好了go)
   
@@ -39,16 +39,16 @@
     go语言安装包的形式安装Beego这个http框架
     * go get github.com/astaxie/beego
 
-  ## 更新、安装
-    Go 更新包的形式更新Beego
-    * 更新
+## 更新、安装
+  Go 更新包的形式更新Beego
+  * 更新
 
-      go get -u github.com/astaxie/beego
+    go get -u github.com/astaxie/beego
     
-    覆盖到 $GOPATH/src/github.com/astaxie/beeg 然后通过本地安装来执行
-    * 安装
-    
-      go install  github.com/astaxie/beego   
+  覆盖到 $GOPATH/src/github.com/astaxie/beeg 然后通过本地安装来执行
+  * 安装
+  
+    go install  github.com/astaxie/beego   
   
   
   
