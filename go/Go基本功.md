@@ -58,6 +58,38 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   > int与int32或int64是不同的类型，只是根据架构对应32/64位值
   
   > uint与uint32或uint64是不同的类型，只是根据架构对应32/64位值 
+# 安装设置
+  mac osx篇
+  * 安装
+  ```shell
+    # homebrew 安装
+    $ brew install go
+  ```
+  
+  linux ubuntu篇
+  * 安装
+  [参考1] (https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/02.3.md)
+  [参考2] (https://www.sysgeek.cn/install-go-language-linux/)
+  
+  * mac上设置开发环境
+  ```
+  $ cat ~/.bash_profile
+  $ sudo vim ~/.bash_profile
+  
+  #把下面这一段增加进去前提是你已经在你的go文件夹的src目录新建了一个叫做gopro的文件
+  export GOPATH=$HOME/go/src/gopro
+  export GOBIN=$GOPATH/bin
+  export PATH=$PATH:$GOPATH/bin
+
+  ```
+  > GOPATH的作用是告诉Go 命令和其他相关工具，在那里去找到安装在你系统上的Go包，Go从1.1版本开始必须设置这个变量，而且不能和Go的安装目录一样，这个目录用来存放Go源码，Go的可运行文件，以及相应的编译之后的包文件。所以这个目录下面有三个子目录：src、bin、pkg
+  
+  > * src 存放源代码（比如：.go .c .h .s等）
+  > * pkg 编译后生成的文件（比如：.a）
+  > * bin 编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中）
+
+  * linux上设置开发环境
+  略
 
 # 语法
 
