@@ -58,20 +58,22 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   > int与int32或int64是不同的类型，只是根据架构对应32/64位值
   
   > uint与uint32或uint64是不同的类型，只是根据架构对应32/64位值 
+  
 # 安装设置
   mac osx篇
-  * 安装
+  
+* 安装
   ```shell
     # homebrew 安装
     $ brew install go
   ```
   
   linux ubuntu篇
-  * 安装
+* 安装
   [参考1] (https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/02.3.md)
   [参考2] (https://www.sysgeek.cn/install-go-language-linux/)
   
-  * mac上设置开发环境
+* mac上设置开发环境
   ```
   $ cat ~/.bash_profile
   $ sudo vim ~/.bash_profile
@@ -88,7 +90,7 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   > * pkg 编译后生成的文件（比如：.a）
   > * bin 编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中）
 
-  * linux上设置开发环境
+* linux上设置开发环境
   略
 
 # 语法
