@@ -60,8 +60,8 @@ GO语言是一门静态类型的语言，类似于C语言一样，他自带有�
   > uint与uint32或uint64是不同的类型，只是根据架构对应32/64位值 
   
 # 安装设置
-  mac osx篇
   
+  mac osx篇
 * 安装
   ```shell
     # homebrew 安装
