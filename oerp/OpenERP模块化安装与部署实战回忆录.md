@@ -104,6 +104,10 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
    $sudo apt-get install node-less
    
   ```
+ # OperationalError: could not connect to server: No such file or directory 不能连接到服务器，没有这样的目录
+ ```
+  
+ ```
 
  * 备份还原数据库
    
