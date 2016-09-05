@@ -19,6 +19,14 @@
   2） Index（索引）：将工作目录下所有文件（包含子目录）生成快照，存放到一个临时的存储区域，Git 称该区域为索引。 
   3） 仓库：将索引通过commit命令提交至仓库中，每一次提交都意味着版本在进行一次更新。 
 
+* 添加SSHkey
+  ```
+    首先需要在你的github或者gitlab上添加sshkey[可参考](https://www.aswifter.com/2015/06/18/git-ssh-key/)  
+    #查看 
+    cat ~/.ssh/id_rsa.pub
+    #查看并复制
+    cat ~/.ssh/id_rsa.pub|pdcopy
+  ```
 * 安装
   
   ```
