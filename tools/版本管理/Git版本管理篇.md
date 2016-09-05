@@ -4,7 +4,14 @@
   Git是一款分布式版本控制系统，我们常用来做一些代码的版本管理，以及一些个人博客的版本管理以及托管。与我们以往常用的SVN不同，
   SVN是一款集中式的版本控制系统，相对来说Git的理念要先进一些，更受技术狂的追捧一些。
   
-  
+## 资源
+  * [git基础教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+  * [git工作流程管理](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+  * [git-flow分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+  * [gitlab部署方法](https://docs.google.com/document/d/1S9I7DvQCqaiM6ksKiLTKYsLD5EosCeLllNvYb8eNjuA/edit)
+  * [SourceTree - Git可视化工具](https://www.sourcetreeapp.com/) 
+  * [Docker](https://www.docker.com/)
+
 ## 操作
 
   GIT的三个基本概念
