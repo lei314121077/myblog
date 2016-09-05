@@ -20,8 +20,9 @@
   3） 仓库：将索引通过commit命令提交至仓库中，每一次提交都意味着版本在进行一次更新。 
 
 * 添加SSHkey
+  [sshkey可参考](https://www.aswifter.com/2015/06/18/git-ssh-key/)  
   ```
-    首先需要在你的github或者gitlab上添加sshkey[可参考](https://www.aswifter.com/2015/06/18/git-ssh-key/)  
+    首先需要在你的github或者gitlab上添加
     #查看 
     cat ~/.ssh/id_rsa.pub
     #查看并复制
