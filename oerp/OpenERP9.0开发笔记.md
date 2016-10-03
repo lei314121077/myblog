@@ -69,7 +69,7 @@
           # 版本号
           'version': '0.1',
 
-          #版权信息
+          #版权信息,默认是AGPL-3
           'license': 'AGPL-3',
           # any module necessary for this one to work correctly
 
