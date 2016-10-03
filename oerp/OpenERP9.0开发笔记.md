@@ -20,7 +20,13 @@
     
   * 修改版权声明
 
-## 定制开发
+## [定制开发](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
+  
+  * 快速创建自己的模块(./odoo.py scaffold 我的模块名  我的模块包容器)
+  
+  ```python
+    $  ./odoo.py scaffold  mymodule myaddons
+  ```
 
 ## 仓储模块
 
