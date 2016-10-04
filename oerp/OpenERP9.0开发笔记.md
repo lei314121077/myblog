@@ -49,8 +49,23 @@
     
     > 更换完，如果加载之后还是原来的logo那么，请关闭你的浏览器然后再清一下缓存。
     
-  * 修改版权声明
-
+  * 修改版权声明 Powered by Odoo
+   ```
+    # 修改版权声明有3个地方1、database manage页面，2、login 页面,3、后台左侧菜单栏底部
+    第一步: 
+    修改这个文件下的 odoo/addons/web/views/webclient_templates.xml “<div class="oe_footer">”把它修改成你自己的或者直接注释掉
+    <!--div class="oe_footer">
+    Powered by <a href="http://www.openerp.com" target="_blank"><span>Odoo</span></a>
+    </div-->
+    第二步：
+    # 编辑/odoo/addons/web/static/src/css/base.css下的
+    .openerp .oe_leftbar > div .oe_footer{
+    .openerp .oe_leftbar > div .oe_footer a{
+    .openerp .oe_leftbar > div .oe_footer a span {
+    我是直接隐藏掉，即新增dispay：none；
+   ```
+  或者你可以[参考这里](http://odoo.guide/debranding-odoo-backend/)
+  
 ## [定制开发](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
   
   * 快速创建自己的模块(./odoo.py scaffold 我的模块名  模块包容器)
