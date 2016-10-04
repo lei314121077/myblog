@@ -1,6 +1,23 @@
 
 # 模块开发
-
+## 常用的一些命令
+  * 重启 odoo
+  
+  ```
+    sudo restart odoo
+  ```
+  
+  * 重启 nginx
+    
+    ```
+      sudo /etc/init.d/nginx reload
+    ```
+    
+  * 重启Postgresql数据库
+  
+  ```
+    sudo service postgresql restart
+  ```
 ## OERP零散
   
 * 替换logo为自己公司的logo
