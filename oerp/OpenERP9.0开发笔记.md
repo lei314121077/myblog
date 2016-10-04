@@ -13,7 +13,7 @@
       sudo /etc/init.d/nginx reload
     ```
     
-  * 重启Postgresql数据库
+  * 重启[Postgresql数据库](http://cdwanze.github.io/%E7%94%B5%E8%84%91/python/%E6%95%B0%E6%8D%AE%E5%BA%93/postgresql%E5%9F%BA%E7%A1%80.html)
   
   ```
     sudo service postgresql restart
