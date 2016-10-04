@@ -22,7 +22,19 @@
   
 * 替换logo为自己公司的logo
     
+    通常方法：
+    
+    1. 登录系统后，把鼠标放到左上角LOGO位置，点击出现的‘编辑公司数据’
+    2. ​在出现的页面的LOGO位置，点击编辑按钮，更换LOGO
+    3. ​刷新页面，如果没看到新LOGO，则点击导航栏的‘网站’功能，进入编辑网站模式
+    4. 点击导航栏右方‘定制’，不勾选‘Show Logo’​，然后再勾选‘ShowLogo’即可
+
+    最直接暴力的方法:
+
     ```
+      1、用你自己的logo替换/opt/odoo/addons/web/static/src/img/下面的logo.png（登录后左上角logo）和logo2.png（用于数据库选择页面）。
+      2、更改POS的logo：替换/opt/odoo/addons/point_of_sale/static/src/img/logo.png
+      
       # 进到目录
         
         $ cd ./openerp/addons/base/static/img
