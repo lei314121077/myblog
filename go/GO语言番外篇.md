@@ -31,5 +31,50 @@
 
   * install LiteIDE on Windows
   
+  # 一些概念和技巧
+    * go语言里面是不允许声明的对象未被引用的，否则会报错
+    ```go
+    package main
+    
+    import(
+      "fmt"
+    )
+    
+    func main(){
+      var a,b,c string
+      fmt.Println("print a and b:", a, b) //这里我并没有把已声明的变量c引用，所以是会报错，因为GO里面不允许出现未被应用的对象占用内存
+    }
+    
+    
+    ```
+    * 对于 String 中单个字符的操作会导致编译失败。String 是带有一些附加属性的只读的字节片（Byte Slices）。所以如果想要对 String 操作的话，应当使用字节片操作，而不是将它转换为 String 类型。
   
+    ```go
+      package main
+
+      import "fmt"
+
+      func main() {  
+          x := "text"
+          xbytes := []byte(x)
+          xbytes[0] = 'T'
+
+          fmt.Println(string(xbytes)) //prints Text
+      }
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
