@@ -32,7 +32,6 @@
   * install LiteIDE on Windows
   
   # 一些概念和技巧
-  
     * go语言里面是不允许声明的对象未被引用的，否则会报错
     
       ```go
