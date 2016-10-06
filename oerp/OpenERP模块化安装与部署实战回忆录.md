@@ -52,6 +52,15 @@ OpenERP 是开源软件,您可以任意下载源代码,任意修改,不需要授
 # 部署
 
 # 异常处理
+* 查看当前环境下，特定端口的运行状态
+ ```
+ $ lsof -i :8000
+ COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+ python  12396 root    6u  IPv4 602445      0t0  TCP *:8069 (LISTEN)
+ python  12400 root    6u  IPv4 602445      0t0  TCP *:8069 (LISTEN)
+ python  12401 root    6u  IPv4 602445      0t0  TCP *:8069 (LISTEN)
+ python  12402 root    6u  IPv4 602445      0t0  TCP *:8069 (LISTEN)
+ ```
 * [Errno 98] Address already in use
   ```
    $ ps -ef
