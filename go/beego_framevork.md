@@ -105,17 +105,42 @@
     
   # beego 框架的应用于开发配置
   ## conf/app.conf各项配置的作用
-  * appname 你的APP应用名称
-  * httpport  端口号
-  * runmode取值是dev或者prod，可以参看beego的文档
-  * db打头的是数据库配置，数据库初始化脚本在schema.sql
-  * tmpdir、logdir是就是一些临时目录，不解释
-  * buildtimeout是编译超时时间，超过了这个时间就会被kill，单位是分钟
-  * uicinternal、uicexternal是UIC的配置，为啥分成两个呢？Builder和UIC通常是在一个内网的，相互之间的访问可以走内网，所以有个uicinternal，但是有的时候UIC的内网地址用户是没法访问的，所以在sso登录的时候还是需要redirect到UIC的外网地址
-  * registry是docker私有源，读者可以使用docker registry搭建
-  * buildscript是Builder内部用到的一个脚本文件地址，默认配置即可
-  * tplmapping这个很重要，这是base image的配置，在registry中增加了base image，也要在此配置一下，这样用户才能在页面上看到
-  * token，这是与UIC通信的凭证，与UIC的token配置成一样即可
+    * appname 你的APP应用名称
+    * httpport  端口号
+    * runmode取值是dev或者prod，可以参看beego的文档
+    * db打头的是数据库配置，数据库初始化脚本在schema.sql
+    * tmpdir、logdir是就是一些临时目录，不解释
+    * buildtimeout是编译超时时间，超过了这个时间就会被kill，单位是分钟
+    * uicinternal、uicexternal是UIC的配置，为啥分成两个呢？Builder和UIC通常是在一个内网的，相互之间的访问可以走内网，所以有个uicinternal，但是有的时候UIC的内网地址用户是没法访问的，所以在sso登录的时候还是需要redirect到UIC的外网地址
+    * registry是docker私有源，读者可以使用docker registry搭建
+    * buildscript是Builder内部用到的一个脚本文件地址，默认配置即可
+    * tplmapping这个很重要，这是base image的配置，在registry中增加了base image，也要在此配置一下，这样用户才能在页面上看到
+    * token，这是与UIC通信的凭证，与UIC的token配置成一样即可
+
+## conf/app.conf各项配置的一些小技巧
+    
+    * include 引用配置
+    如果你觉得所有配置陪在一个文件里面比较蛋疼，你可以用include这样做
+    '''go
+      include "db.conf"
+    '''
+    * db 配置
+    
+
+# [路由设置](http://beego.me/docs/mvc/controller/router.md#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%E5%8F%8A-restful-%E8%A7%84%E5%88%99)
+
+
+# Controller 运行机制
+
+# model 逻辑
+
+# view 编写
+
+# 静态文件处理
+
+# ORM
+
+
   
   
   
