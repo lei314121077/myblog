@@ -1,6 +1,6 @@
 # shell 
  
-  * Ubuntu Linux系统环境变量配置文件：
+ * Ubuntu Linux系统环境变量配置文件：
 
       * /etc/profile : 
       
