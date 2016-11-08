@@ -24,7 +24,8 @@
   [sshkey可参考](https://www.aswifter.com/2015/06/18/git-ssh-key/)  
 
   ```
-    首先需要在你的github或者gitlab上添加
+    首先需要创建你的sshkey,并在你的github或者gitlab上添加
+    ssh-keygen -t rsa -C "ldx314121077@163.com"
     #查看 
     cat ~/.ssh/id_rsa.pub
     #查看并复制
