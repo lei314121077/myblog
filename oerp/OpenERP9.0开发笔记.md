@@ -8,6 +8,11 @@
   ```
     sudo restart odoo
   ```
+  * 停止 odoo
+  
+  ```
+   sudo stop odoo
+  ```
   
   * 重启 nginx
     
