@@ -3,6 +3,12 @@
  * [9.0开发文档](https://www.odoo.com/documentation/9.0/howtos/backend.html#build-an-odoo-module)
  * [8.0开发文档](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
 ## 常用的一些命令
+  * 启动 odoo
+  
+  ```
+   sudo start odoo
+  ```
+  
   * 重启 odoo
   
   ```
