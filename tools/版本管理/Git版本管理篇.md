@@ -364,14 +364,14 @@
 # git 的一些错误以及解决办法
 
   * 错误提示：fatal: remote origin already exists.
-    1、 git remote rm origin
-    2、 git remote add origin git@github.com:yourName/yourRrojectName.git
-    3、 git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'.
-    4、 找到你的github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
+    * git remote rm origin
+    * git remote add origin git@github.com:yourName/yourRrojectName.git
+    * git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'.
+    * 找到你的github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
   
   * git push origin master 错误提示：error:failed to push som refs to .......
-    1、先输入$ git pull origin master //先把远程服务器github上面的文件拉下来
-    2、再输入$ git push origin master  //再push上去
-    3、如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.   //说明你的本地仓库还没有跟远程仓库关联上
-    4、则需要重新输入$ git remote add origin git@github.com:djqiang/gitdemo.git
+    * 先输入$ git pull origin master //先把远程服务器github上面的文件拉下来
+    * 再输入$ git push origin master  //再push上去
+    * 如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.   //说明你的本地仓库还没有跟远程仓库关联上
+    * 则需要重新输入$ git remote add origin git@github.com:djqiang/gitdemo.git
 
