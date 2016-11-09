@@ -364,10 +364,10 @@
 # git 的一些错误以及解决办法
 
   * 错误提示：fatal: remote origin already exists.
-  1、 git remote rm origin
-  2、 git remote add origin git@github.com:yourName/yourRrojectName.git
-  3、 git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'.
-  4、 找到你的github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
+    1、 git remote rm origin
+    2、 git remote add origin git@github.com:yourName/yourRrojectName.git
+    3、 git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'.
+    4、 找到你的github的安装路径，找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
   
   * git push origin master 错误提示：error:failed to push som refs to .......
     1、先输入$ git pull origin master //先把远程服务器github上面的文件拉下来
