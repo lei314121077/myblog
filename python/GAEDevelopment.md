@@ -67,3 +67,25 @@
     * go
 
     * java
+
+## [GoogleContacts联系人开发](https://developers.google.com/google-apps/contacts/v3/)
+
+* 对接
+
+    * python
+    
+    * go
+    
+    * java
+    
+## [GoogleDrive云硬盘开发](https://developers.google.com/drive/)
+    
+    * python
+    
+    * go
+    
+    * java
+    
+    
+
+
