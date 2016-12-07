@@ -153,25 +153,14 @@
     
 # [numpy 模块](http://cdwanze.github.io/%E7%94%B5%E8%84%91/python/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/numpy%E6%A8%A1%E5%9D%97.html)
   
-# Requests 
+# [Requests](http://cn.python-requests.org/zh_CN/latest/) 
 
-  [参考](http://cn.python-requests.org/zh_CN/latest/)
+# [UrlLib & UrlLib2](https://docs.python.org/3/library/urllib.request.html)
   
-
-# UrlLib & UrlLib2
+# [用ET包解析XML](https://docs.python.org/3/library/xml.etree.elementtree.html)
   
-  [参考](https://docs.python.org/3/library/urllib.request.html)
-  
+# [Json包 2.7版](https://docs.python.org/2/library/json.html)
 
-# 用ET包解析XML
-
-  [参考](https://docs.python.org/3/library/xml.etree.elementtree.html)
-  
-# Json包 
-
-  [2.7版参考](https://docs.python.org/2/library/json.html)
-
-# PyMongo应用
-  结合MongoDB[参考](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/)
+# [PyMongo应用:结合MongoDB](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/)
 
 
