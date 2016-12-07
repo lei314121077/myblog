@@ -81,7 +81,9 @@
       # tar -xzvf pip-1.5.4.tar.gz
       # cd pip-1.5.4
       # python setup.py install
-    ```
+      #或者
+      sudo easy_install pip
+    ```
     
   * 正确的姿势
     
