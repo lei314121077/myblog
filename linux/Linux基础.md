@@ -1,4 +1,6 @@
 # shell 
+
+ 关于shell我们知道，有2种类型，一种是bashrc，一种是
  
  * Ubuntu Linux系统环境变量配置文件：
 
@@ -19,7 +21,7 @@
       为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取.
       * ~/.bashrc :
       
-      该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该该文件被读取。
+      该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取。
       
  * cat 查看
   
