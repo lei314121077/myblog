@@ -6,8 +6,8 @@
  
  * Mac 安装
 
-   > 默认Mac是没有自带JAVA环境的，所以你需要自己安装，首先第一步是安装JDK,目前常用的几个版本有JDK1.6、JDK1.7、JDK1.8 .
-   > 当然在 OS X 上，你可以同时安装多个版本的 JDK。你可以通过命令/usr/libexec/java_home -V来查看安装了哪几个 JDK。
+    > 默认Mac是没有自带JAVA环境的，所以你需要自己安装，首先第一步是安装JDK,目前常用的几个版本有JDK1.6、JDK1.7、JDK1.8 .
+    > 当然在 OS X 上，你可以同时安装多个版本的 JDK。你可以通过命令/usr/libexec/java_home -V来查看安装了哪几个 JDK。
    
    * /usr/libexec/java_home -V  查看安装了那几个JDK版本
    
