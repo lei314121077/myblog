@@ -11,9 +11,9 @@
    
    * /usr/libexec/java_home -V  查看安装了那几个JDK版本
    
-     * [jdk1.6](https://support.apple.com/kb/DL1572?locale=zh_CN)
-     * [jdk1.7](http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk7-downloads-1880260.html)
-     * [jdk1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+      * [jdk1.6](https://support.apple.com/kb/DL1572?locale=zh_CN)
+      * [jdk1.7](http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk7-downloads-1880260.html)
+      * [jdk1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
   
    * 在bash_profile里面添加环境变量
       
