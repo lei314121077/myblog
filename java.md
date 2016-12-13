@@ -39,11 +39,11 @@
           $ jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/
           $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/
        ```
-
-    * 使用 jenv versions  查看添加的JDK版本
+   
+    * 使用 jenv versions  查看添加的JDK版本
     
-       ```
-          jenv versions
+       ```
+          $ jenv versions
        ```
 
 
