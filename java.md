@@ -10,7 +10,6 @@
    > 当然在 OS X 上，你可以同时安装多个版本的 JDK。你可以通过命令/usr/libexec/java_home -V来查看安装了哪几个 JDK。
    
    * /usr/libexec/java_home -V  查看安装了那几个JDK版本
-   
       * [jdk1.6](https://support.apple.com/kb/DL1572?locale=zh_CN)
       * [jdk1.7](http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk7-downloads-1880260.html)
       * [jdk1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -19,11 +18,9 @@
       
       > vi .bash_profile 输入以下内容  
       > vi .bash_profile 输入以下内容  
-      
-      然后执行source .bash_profile生效新配置  
+      > 然后执行source .bash_profile生效新配置  
       
       ```
-      
        Mac默认 JDK 6（Mac默认自带了一个jdk6版本）  
        export JAVA_6_HOME=`/usr/libexec/java_home -v 1.6`  
        # 设置 JDK 7  
