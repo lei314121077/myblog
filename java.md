@@ -8,9 +8,9 @@
  
    * myeclipse 和 eclipse 
     
-       > myeclipse要钱，eclipse不要钱。原来myeclipse只是一给eclipse做插件的，后来感觉用myeclipse插件的人多了，就把myeclipse插件和eclipse打包做成myeclipse产品
+      > myeclipse要钱，eclipse不要钱。原来myeclipse只是一给eclipse做插件的，后来感觉用myeclipse插件的人多了，就把myeclipse插件和eclipse打包做成myeclipse产品
 
-       > myeclipse是在eclipse上把java EE的一些插件封装起来了如hibernate，spring，ejb……
+      > myeclipse是在eclipse上把java EE的一些插件封装起来了如hibernate，spring，ejb……
 同时也有服务器插件如tomcat/weblogic/jboss等，如果做web开发是不错的选择。
 
        >  eclipse有几种不同的版本如classes标准版 ，这是eclipse的基础，如今eclipse也有对应ee版，可以与myeclipse抗衡，如果在添加jboss tools插件足够强大。
