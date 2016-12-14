@@ -3,7 +3,24 @@
  妈蛋，说好的再也不写JAVA的呢！！！，时隔三年之后我又要重新拿起JAVA这门工具来写项目
  
 ## 安装 
+
+ * 关于JAVA的常用工具
  
+    * myeclipse 和 eclipse 
+    
+       > myeclipse要钱，eclipse不要钱。原来myeclipse只是一给eclipse做插件的，后来感觉用myeclipse插件的人多了，就把myeclipse插件和eclipse打包做成myeclipse产品
+
+       > myeclipse是在eclipse上把java EE的一些插件封装起来了如hibernate，spring，ejb……
+同时也有服务器插件如tomcat/weblogic/jboss等，如果做web开发是不错的选择。
+
+       >  eclipse有几种不同的版本如classes标准版 ，这是eclipse的基础，如今eclipse也有对应ee版，可以与myeclipse抗衡，如果在添加jboss tools插件足够强大。
+
+       > 如今如svn，hibernate tools JD……都插件是基于eclipse开发，但myeclipse都可以安装，应为它的核心就是eclipse。
+
+       > 本人建议用eclipse，如果做Java EE （web）的开发可以下eclipse for EE 版，他集成了一些web服务器插件，你可以自己按照需求增加插件，足以超过myeclipse。
+
+
+    
  * Mac 安装
 
     > 默认Mac是没有自带JAVA环境的，所以你需要自己安装，首先第一步是安装JDK,目前常用的几个版本有JDK1.6、JDK1.7、JDK1.8 .
