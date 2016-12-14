@@ -6,7 +6,7 @@
 
  * 关于JAVA的常用工具
  
-    ** myeclipse 和 eclipse 
+  * myeclipse 和 eclipse 
     
          > myeclipse要钱，eclipse不要钱。原来myeclipse只是一给eclipse做插件的，后来感觉用myeclipse插件的人多了，就把myeclipse插件和eclipse打包做成myeclipse产品
 
