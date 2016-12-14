@@ -90,11 +90,11 @@
 
 * [对接](https://developers.google.com/drive/v2/reference/)
 
-    * python
+    * [python](https://developers.google.com/drive/v3/web/quickstart/python)
     
-    * go
+    * [go](https://developers.google.com/drive/v3/web/quickstart/go)
     
-    * java
+    * [java](https://developers.google.com/drive/v3/web/quickstart/java)
     
     
 
