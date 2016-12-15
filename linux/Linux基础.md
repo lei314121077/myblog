@@ -47,13 +47,36 @@
   # ubuntu osx系列
   $ sudo apt-get install package-name
  ```
- * cd
+ * uname -a 查看Linux 系统内核版本
+ * sudo lsb_release -a    查看当前系统版本信息
  
- * mkdir
+ * cd  去到或者进入到某目录 
+
+ ```
+   cd  Descktop/  
+ ```
+ *  pwd 查看当前目录
+
  
- * touch
  
- * rm -r 
+ * mkdir  新建一个目录文件
+ 
+ ```
+   mkdir directory
+ ```
+ * touch  新建单个文件
+ 
+ ```
+   touch file_name.go
+ ```
+ 
+ * rm -r   删除文件夹或文件
+ 
+ ```
+   rm -r file_name.go
+   rm -r directory
+ ```
+ 
  
  *  解压安装包
 
