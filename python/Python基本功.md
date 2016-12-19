@@ -13,13 +13,13 @@
   
   ## 面向对象的三大特性
 
-    ## 继承Extend
+    ### 继承Extend
 
       ```python
         class 
       ```
     
-    ## 封装Package
+    ### 封装Package
     
     ## 多态Polymorphism
   
