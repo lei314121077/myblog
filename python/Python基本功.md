@@ -11,20 +11,20 @@
 
 #面向对象
   
-  ## 面向对象的三大特性
+## 面向对象的三大特性
 
-    ### 继承Extend
+### 继承Extend
 
-      ```python
-        class 
-      ```
-    
-    ### 封装Package
-    
-    ## 多态Polymorphism
-  
-  ## 下划线的应用
-  
+ ```python
+   class 
+ ```
+
+### 封装Package
+
+## 多态Polymorphism
+
+## 下划线的应用
+
   "单下划线" 开始的成员变量叫做保护变量，意思是只有类对象和子类对象自己能访问到这些变量；
   "双下划线" 开始的是私有成员，意思是只有类对象自己能访问，连子类对象也不能访问到这个数据。
   
@@ -46,22 +46,22 @@
   
 
   
-  ## 形参之 *args 和 **kwargs
-  
-    * *args 与 **kwargs
-      
-      *args* 接收的是一个元组对象， **kwargs 传递的是一个字典对象
-      
-      ```python
-      
-      def fun(*args **kwargs){
-      
-        print args, 'args_type = %s' % type(args)      #打印出来的类型是一个元组对象
-        print kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
-      
-      }
-      
-      ```  
+## 形参之 *args 和 **kwargs
+
+  * *args 与 **kwargs
+
+    *args* 接收的是一个元组对象， **kwargs 传递的是一个字典对象
+
+    ```python
+
+    def fun(*args **kwargs){
+
+      print args, 'args_type = %s' % type(args)      #打印出来的类型是一个元组对象
+      print kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
+
+    }
+
+    ```  
 
 
 
@@ -135,27 +135,27 @@
 
 
 ## 迭代器(Iterable)
-  
-  ```python
 
-    # 姿势1
-    for i in range(10):
-      print i
+ ```python
 
-    # 姿势1.1
-    [i for i in range(10)]
+   # 姿势1
+   for i in range(10):
+     print i
 
-    # 姿势1.2
-    [i for i in range if i/2 else i+1]
+   # 姿势1.1
+   [i for i in range(10)]
 
-    # 姿势2
-    i = 0
-    while i < 10:
-      i += i
-      print i 
+   # 姿势1.2
+   [i for i in range if i/2 else i+1]
+
+   # 姿势2
+   i = 0
+   while i < 10:
+     i += i
+     print i 
 
 
-  ```
+ ```
 
 
 ## 生成器 yied (Generator)
