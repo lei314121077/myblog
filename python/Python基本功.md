@@ -4,7 +4,7 @@
     * [下划线的应用](#下滑线的应用)
     * [面向对象的三大特性](#面向对象的三大特性)
       * [继承Extend](#继承Extend)
-      * [封装Package](#封装Package)
+      * [封装和私有化Package](#封装和私有化Package)
       * [多态Polymorphism](#多态Polymorphism)
     * [形参之 *args 和 **kwargs](#形参之 *args 和 **kwargs)
   * [容器异常高阶函数内置函数](*容器异常高阶函数内置函数) 
@@ -16,12 +16,56 @@
 ### 继承Extend
 
  ```python
-   class 
+  class Animal：
+    pass
+
+  class Dog(Animal):
+    pass
+
+  class Cat(Animal):
+    pass
+
  ```
 
-### 封装Package
+### 封装和私有化Package
 
 ## 多态Polymorphism
+  
+  例如著名的 repr() 函数，它能够针对输入的任何对象返回一个字符串。这就是多态的代表之一。
+  
+  ```python
+    repr([1,2,3])
+    输出: '[1,2,3]'
+  ```
+  我们再来看看用OOP的思想实现的多态
+
+  ```python
+
+    class Animal:
+        def __init__(self, name=""):
+            self.name = name
+
+        def talk(self):
+            pass
+
+    class Cat(Animal):
+        def talk(self):
+            print "Meow!"
+
+    class Dog(Animal):
+        def talk(self):
+            print "Woof!"
+
+    a = Animal()
+    a.talk()
+
+    c = Cat("Missy")
+    c.talk()
+
+    d = Dog("Rocky")
+    d.talk()
+
+  ```
 
 ## 下划线的应用
 
