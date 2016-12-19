@@ -1,6 +1,27 @@
 相关的语法之类的解释我就不多做笔记，毕竟对于这些东西都已经烂熟于心，这里我就只做一些用法以及项目开发当中常要用到的一些关于Python基本功的笔记。
+# 目录
+  * [面向对象](#面向对象)
+    * [下划线的应用](#下滑线的应用)
+    * [面向对象的三大特性](#面向对象的三大特性)
+      * [继承Extend](#继承Extend)
+      * [封装Package](#封装Package)
+      * [多态Polymorphism](#多态Polymorphism)
+    * [形参之 *args 和 **kwargs](#形参之 *args 和 **kwargs)
+  * [容器异常高阶函数内置函数](*容器异常高阶函数内置函数) 
+
 #面向对象
   
+  ## 面向对象的三大特性
+
+    ## 继承Extend
+
+      ```python
+        class 
+      ```
+    
+    ## 封装Package
+    
+    ## 多态Polymorphism
   
   ## 下划线的应用
   
@@ -24,51 +45,123 @@
   > 因为下划线对解释器有特殊的意义，而且是内建标识符所使用的符号，我们建议程序员避免用下划线作为变量名的开始。一般来讲，变量名_xxx被看作是“私有的”，在模块或类外不可以使用。当变量是私有的时候，用_xxx来表示变量是很好的习惯。因为变量名__xxx__对Python里特殊方法专用的标识，如 __init__（）代表类的构造函数。>
   
 
-  ## 继承
-  
-  ## 重写
-  
-  ## 重载
   
   ## 形参之 *args 和 **kwargs
   
-  * *args 与 **kwargs
-    
-    *args* 接收的是一个元组对象， **kwargs 传递的是一个字典对象
-    
-    ```python
-    
-    def fun(*args **kwargs){
-    
-      print args, 'args_type = %s' % type(args)      #打印出来的类型是一个元组对象
-      print kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
-    
-    }
-    
-    ```  
+    * *args 与 **kwargs
+      
+      *args* 接收的是一个元组对象， **kwargs 传递的是一个字典对象
+      
+      ```python
+      
+      def fun(*args **kwargs){
+      
+        print args, 'args_type = %s' % type(args)      #打印出来的类型是一个元组对象
+        print kwargs, 'kwargs_type = %s' % type(kwargs) #打印出来的类型是一个字典对象
+      
+      }
+      
+      ```  
 
 
 
-#高阶函数
+#容器异常高阶函数内置函数
 
 ## 容器
 
-  * 列表 list
+  * 列表 list  []
+      
+    ```python
+      list_null = []
+      list_int = [1,2,3,4,5,6,7,8,9]
+      list_str = ['一', '二', '三', '四', '五', '六']
+      list_bol = [True, False, True, Flase]
+    ```
+
+    * 添加 append(添加的值) 
+
+      在列表的末尾添加参数
+
+      ```python
+        list_int.append(10)
+      ```
+    
+    * 插入 insert(下标位置， 参数的值)
+
+      在指定的位置插入参数
+
+      ```python
+        list_int.insert(10, 100)
+      ```
+    
+    * 查看下标的长度 len(要查看的列表)
+
+      ```python
+        len(list_int)
+      ```
+
+    * 删除 pop(下标)
+
+      ```python
+        list_int.pop(10)
+      ```
+
+  * 字典 dict  {}
   
-  * 字典 dict
-  
-  * 元组  
+    ```python
+
+      dict_null = {}
+      dict_int = {1:1, 2:2, 3,3}
+      dict_str = {'a':'aaa', 'b':'ccc', 'c':111, 'd':222}
+
+    ```
+
+    *  
+
+  * 元组 tuple ()
+
+    元组内的参数是不可变的
+
+    ```python
+      tuple_int = (1,2,3,4,5,6)
+      tuple_str = ('a', 'b', 'c', 'd')
+    ```
+
+
+
+  * set 
+
+
+
 
 ## 迭代器(Iterable)
   
   ```python
-    
+
+    # 姿势1
+    for i in range(10):
+      print i
+
+    # 姿势1.1
+    [i for i in range(10)]
+
+    # 姿势1.2
+    [i for i in range if i/2 else i+1]
+
+    # 姿势2
+    i = 0
+    while i < 10:
+      i += i
+      print i 
+
+
   ```
 
 
-## 生成器(Generator)
+## 生成器 yied (Generator)
 
   ```python
+
   
   ```
   
@@ -79,11 +172,33 @@
   ```
   
 ## 异常处理(Exception)
-
-  ```python
   
-  ```
+  * try except finally
+  
+    ```python
+      try:
+        f = x, y: x+y
+        f('hello', 123)
+      except TypeExceptionError e:
+        print e
+      finally:
+        print '不管是否捕获到异常，我依然执行！'
+  
+    ```
+  * rain()
+
+    ```python
+
+    ```
+
+
 ## 匿名函数 (lambda)
+  
+  ```python
+
+    func = lambda x, y: x+y
+
+  ```
 
 ## 切片
 
