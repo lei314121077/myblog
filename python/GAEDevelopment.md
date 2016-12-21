@@ -6,7 +6,7 @@
 
    > 过程略过、、、、、
 
-* 下载开发环境所需的SDK 
+* [下载开发环境所需的SDK](https://cloud.google.com/appengine/docs/python/download) 
 
     以下环境我是在mac上配置的
 
@@ -99,3 +99,4 @@
     
 
 
+## [参考1](http://lampeter123.iteye.com/blog/390536)
