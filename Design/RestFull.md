@@ -80,21 +80,21 @@
 
       > REST要求，必须通过统一的接口来对资源执行各种操作。对于每个资源只能执行一组有限的操作。以HTTP/1.1协议为例，HTTP/1.1协议定义了一个操作资源的统一接口，主要包括以下内容：
 
-  ## 7个HTTP方法：
+## 7个HTTP方法：
 
-    > GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS
+  > GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS
 
-    * HTTP头信息（可自定义）
+  * HTTP头信息（可自定义）
 
-    * HTTP响应状态代码（可自定义）
+  * HTTP响应状态代码（可自定义）
 
-    * 一套标准的内容协商机制
+  * 一套标准的内容协商机制
 
-    * 一套标准的缓存机制
+  * 一套标准的缓存机制
 
-    * 一套标准的客户端身份认证机制
+  * 一套标准的客户端身份认证机制
 
-    > REST还要求，对于资源执行的操作，其操作语义必须由HTTP消息体之前的部分完全表达，不能将操作语义封装在HTTP消息体内部。这样做是为了提高交互的可见性，以便于通信链的中间组件实现缓存、安全审计等等功能。
+  > REST还要求，对于资源执行的操作，其操作语义必须由HTTP消息体之前的部分完全表达，不能将操作语义封装在HTTP消息体内部。这样做是为了提高交互的可见性，以便于通信链的中间组件实现缓存、安全审计等等功能。
 
 # 什么是超文本驱动？
 
@@ -118,42 +118,42 @@
 
   从架构风格的抽象高度来看，常见的分布式应用架构风格有三种：
 
-  1 分布式对象（Distributed Objects，简称DO）
-  架构实例有CORBA/RMI/EJB/DCOM/.NET Remoting等等
+  * 1 分布式对象（Distributed Objects，简称DO）
+    架构实例有CORBA/RMI/EJB/DCOM/.NET Remoting等等
 
-  2 远程过程调用（Remote Procedure Call，简称RPC）
-  架构实例有SOAP/XML-RPC/Hessian/Flash AMF/DWR等等
+  * 2 远程过程调用（Remote Procedure Call，简称RPC）
+    架构实例有SOAP/XML-RPC/Hessian/Flash AMF/DWR等等
 
-  3 表述性状态转移（Representational State Transfer，简称REST）
-  架构实例有HTTP/WebDAV
+  * 3 表述性状态转移（Representational State Transfer，简称REST）
+    架构实例有HTTP/WebDAV
 
-    DO和RPC这两种架构风格在企业应用中非常普遍，而REST则是Web应用的架构风格，它们之间有非常大的差别。
+  DO和RPC这两种架构风格在企业应用中非常普遍，而REST则是Web应用的架构风格，它们之间有非常大的差别。
 
-    * REST与DO的差别在于：
+  * REST与DO的差别在于：
 
-      > REST支持抽象（即建模）的工具是资源，DO支持抽象的工具是对象。在不同的编程语言中，对象的定义有很大差别，所以DO风格的架构通常都是与某种编程语言绑定的。跨语言交互即使能实现，实现起来也会非常复杂。而REST中的资源，则完全中立于开发平台和编程语言，可以使用任何编程语言来实现。
+    > REST支持抽象（即建模）的工具是资源，DO支持抽象的工具是对象。在不同的编程语言中，对象的定义有很大差别，所以DO风格的架构通常都是与某种编程语言绑定的。跨语言交互即使能实现，实现起来也会非常复杂。而REST中的资源，则完全中立于开发平台和编程语言，可以使用任何编程语言来实现。
 
-      >  DO中没有统一接口的概念。不同的API，接口设计风格可以完全不同。DO也不支持操作语义对于中间组件的可见性。
+    >  DO中没有统一接口的概念。不同的API，接口设计风格可以完全不同。DO也不支持操作语义对于中间组件的可见性。
 
-      > DO中没有使用超文本，响应的内容中只包含对象本身。REST使用了超文本，可以实现更大粒度的交互，交互的效率比DO更高。
+    > DO中没有使用超文本，响应的内容中只包含对象本身。REST使用了超文本，可以实现更大粒度的交互，交互的效率比DO更高。
 
-      > REST支持数据流和管道，DO不支持数据流和管道。
+    > REST支持数据流和管道，DO不支持数据流和管道。
 
-      > DO风格通常会带来客户端与服务器端的紧耦合。在三种架构风格之中，DO风格的耦合度是最大的，而REST的风格耦合度是最小的。REST松耦合的源泉来自于统一接口+超文本驱动。
+    > DO风格通常会带来客户端与服务器端的紧耦合。在三种架构风格之中，DO风格的耦合度是最大的，而REST的风格耦合度是最小的。REST松耦合的源泉来自于统一接口+超文本驱动。
 
-      REST与RPC的差别在于：
+    REST与RPC的差别在于：
 
-      > REST支持抽象的工具是资源，RPC支持抽象的工具是过程。REST风格的架构建模是以名词为核心的，RPC风格的架构建模是以动词为核心的。简单类比一下，REST是面向对象编程，RPC则是面向过程编程。
+    > REST支持抽象的工具是资源，RPC支持抽象的工具是过程。REST风格的架构建模是以名词为核心的，RPC风格的架构建模是以动词为核心的。简单类比一下，REST是面向对象编程，RPC则是面向过程编程。
 
-      > RPC中没有统一接口的概念。不同的API，接口设计风格可以完全不同。RPC也不支持操作语义对于中间组件的可见性。
+    > RPC中没有统一接口的概念。不同的API，接口设计风格可以完全不同。RPC也不支持操作语义对于中间组件的可见性。
 
-      > RPC中没有使用超文本，响应的内容中只包含消息本身。REST使用了超文本，可以实现更大粒度的交互，交互的效率比RPC更高。
+    > RPC中没有使用超文本，响应的内容中只包含消息本身。REST使用了超文本，可以实现更大粒度的交互，交互的效率比RPC更高。
 
-      > REST支持数据流和管道，RPC不支持数据流和管道。
+    > REST支持数据流和管道，RPC不支持数据流和管道。
 
-      > 因为使用了平台中立的消息，RPC风格的耦合度比DO风格要小一些，但是RPC风格也常常会带来客户端与服务器端的紧耦合。支持统一接口+超文本驱动的REST风格，可以达到最小的耦合度。
+    > 因为使用了平台中立的消息，RPC风格的耦合度比DO风格要小一些，但是RPC风格也常常会带来客户端与服务器端的紧耦合。支持统一接口+超文本驱动的REST风格，可以达到最小的耦合度。
 
-      比较了三种架构风格之间的差别之后，从面向实用的角度来看，REST架构风格可以为Web开发者带来三方面的利益：
+    比较了三种架构风格之间的差别之后，从面向实用的角度来看，REST架构风格可以为Web开发者带来三方面的利益：
 
 * 简单性
   
@@ -258,67 +258,67 @@
 
 ## 查询参数
 
-   <table>
+  <table>
 
-   <tr><td>&nbsp;&nbsp;&nbsp;术语&nbsp;&nbsp;&nbsp;</td><td>示例&nbsp;&nbsp;&nbsp;</td><td>备注</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;术语&nbsp;&nbsp;&nbsp;</td><td>示例&nbsp;&nbsp;&nbsp;</td><td>备注</td></tr>
 
-   <tr><td>&nbsp;&nbsp;&nbsp;过滤条件&nbsp;&nbsp;&nbsp;</td><td>?type=1&age=16&nbsp;&nbsp;&nbsp;</td><td>允许一定的uri冗余，如/zoos/1与/zoos?id=1</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;过滤条件&nbsp;&nbsp;&nbsp;</td><td>?type=1&age=16&nbsp;&nbsp;&nbsp;</td><td>允许一定的uri冗余，如/zoos/1与/zoos?id=1</td></tr>
 
-   <tr><td>&nbsp;&nbsp;&nbsp;排序&nbsp;&nbsp;&nbsp;</td><td>?sort=age,desc</td><td></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;排序&nbsp;&nbsp;&nbsp;</td><td>?sort=age,desc</td><td></td></tr>
 
-   <tr><td>&nbsp;&nbsp;&nbsp;投影&nbsp;&nbsp;&nbsp;</td><td>?whitelist=id,name,email</td><td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;投影&nbsp;&nbsp;&nbsp;</td><td>?whitelist=id,name,email</td><td></tr>
 
-   <tr><td>&nbsp;&nbsp;&nbsp;分页&nbsp;&nbsp;&nbsp;</td><td>?limit=10&offset=3</td><td></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;分页&nbsp;&nbsp;&nbsp;</td><td>?limit=10&offset=3</td><td></td></tr>
 
-   </table>
+  </table>
 
 ## 常见的三种body format格式
 
-   *  1.Content-Type: application/json
-      
-      ```python
-         POST /v1/animal HTTP/1.1
-         Host: api.example.org
-         Accept: application/json
-         Content-Type: application/json
-         Content-Length: 24
+  *  1.Content-Type: application/json
+    
+    ```python
+       POST /v1/animal HTTP/1.1
+       Host: api.example.org
+       Accept: application/json
+       Content-Type: application/json
+       Content-Length: 24
 
-         {   
-               "name": "Gir",
-               "animalType": "12"
-         }
-      ```
-   * 2.Content-Type: application/x-www-form-urlencoded (浏览器POST表单用的格式)
+       {   
+             "name": "Gir",
+             "animalType": "12"
+       }
+    ```
+  * 2.Content-Type: application/x-www-form-urlencoded (浏览器POST表单用的格式)
 
-      ```python
-         POST /login HTTP/1.1
-         Host: example.com
-         Content-Length: 31
-         Accept: text/html
-         Content-Type: application/x-www-form-urlencoded
+    ```python
+       POST /login HTTP/1.1
+       Host: example.com
+       Content-Length: 31
+       Accept: text/html
+       Content-Type: application/x-www-form-urlencoded
 
-         username=root&password=Zion0101
-      ```
-   * 3.Content-Type: multipart/form-data; boundary=—-RANDOM_jDMUxq4Ot5 (表单有文件上传时的格式)
+       username=root&password=Zion0101
+    ```
+  * 3.Content-Type: multipart/form-data; boundary=—-RANDOM_jDMUxq4Ot5 (表单有文件上传时的格式)
 
 
 
 # Response规范
-   * 1.response的body直接就是数据，不要做多余的包装
-   
-      ```python
-         {
-              "result":{"name":123123, "age":22}
-         }
+  * 1.response的body直接就是数据，不要做多余的包装
 
-      ```
+    ```python
+       {
+            "result":{"name":123123, "age":22}
+       }
 
-   * 2.常用的集中HTTP方法成功处理后的返回格式
-   
-      * GET    :             返回一个对象或者集合
-      * POST :             返回新增成功的对象，或者受影响的行数（添加个数）
-      * PUT/PATCH     返回更新成功后的西乡，或者受影响的行数（编辑个数）
-      * DELETE           返回空值，或受影响的函数（删除的个数）
+    ```
+
+* 2.常用的集中HTTP方法成功处理后的返回格式
+
+  * GET    :             返回一个对象或者集合
+  * POST :             返回新增成功的对象，或者受影响的行数（添加个数）
+  * PUT/PATCH     返回更新成功后的西乡，或者受影响的行数（编辑个数）
+  * DELETE           返回空值，或受影响的函数（删除的个数）
 
 
 
