@@ -1,52 +1,53 @@
 
 # 目录
 
-	* [安装](#安装)
-	* [Django自带命令行](#Django自带命令行)
+* [安装](#安装)
+* [Django自带命令行](#Django自带命令行)
+* [jango项目和模块结构](#jango项目和模块结构)
 
 #  安装
 	
-	* pip安装
-		
-		* Ubuntu:
-
-			```python
-				sudo apt-get install python-pip
-
-			```
-		* centos
-
-			```python
-
-				yum install python-pip
-
-			```
-
-		* mac os x
-
-			```python
-				brew install pip
-			```
-
-		* 升级
-
-			```python
-				sudo pip install --upgrade pip
-			```
-
-		> 或者直接用[get-pip])(https://pip.pypa.io/en/latest/installing/)来安装
+* pip安装
 	
-	* 用pip来安装Django
+	* Ubuntu:
 
-		* 安装
+		```python
+			sudo apt-get install python-pip
 
-			```python
-				sudo pip install Django
+		```
+	* centos
 
-				# 或者
-				sudo pip install Django==1.8.6
-				sudo pip install Django==1.10.3
-			```
+		```python
+
+			yum install python-pip
+
+		```
+
+	* mac os x
+
+		```python
+			brew install pip
+		```
+
+	* 升级
+
+		```python
+			sudo pip install --upgrade pip
+		```
+
+	> 或者直接用[get-pip])(https://pip.pypa.io/en/latest/installing/)来安装
+
+* 用pip来安装Django
+
+	* 安装
+
+		```python
+			sudo pip install Django
+
+			# 或者
+			sudo pip install Django==1.8.6
+			sudo pip install Django==1.10.3
+		```
 
 # Django自带命令行
 	
@@ -191,7 +192,7 @@
 		后台，可以用很少量的代码就拥有一个强大的后台。
 
 	* [settings.py](http://www.ziqiangxuetang.com/django/django-settings.html)
-	
+
 		Django 的设置，配置文件，比如 DEBUG 的开关，静态文件的位置等。
 
 
