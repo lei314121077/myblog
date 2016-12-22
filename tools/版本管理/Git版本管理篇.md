@@ -375,3 +375,7 @@
     * 如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.   //说明你的本地仓库还没有跟远程仓库关联上
     * 则需要重新输入$ git remote add origin git@github.com:djqiang/gitdemo.git
 
+  * 提示: fatal: unable to access 'http://gitlab.sozi.it/p2p/ServerBackstage.git/': Failed to connect to gitlab.sozi.it port 80: Operation timed out
+    原因是公司的gitlab变更了，做了迁移，然后我之前本机关联的gitlab项目招不到了
+    * vim .git/config
+    * 编辑 URL: 把旧的Url项目地址替换成你新的URL地址
