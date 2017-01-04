@@ -209,5 +209,75 @@
   ```
 
 
+# Linux 下清理垃圾的一些命令
+
+   * 非常有用的清理命令：
+
+      * sudo apt-get autoclean
+      * sudo apt-get clean
+      * sudo apt-get autoremove
+
+      这三个命令主要清理升级缓存以及无用包的。
+
+   * 清理opera／ firefox的缓存文件：
+
+      * ls ~/.opera/cache4
+
+      * ls ~/.mozilla/firefox/*.default/Cache
+
+   * 清理Linux下孤立的包：
+
+      图形界面下我们可以用：gtkorphan
+
+      * sudo apt-get install gtkorphan -y
+
+      终端命令下我们可以用：deborphan
+
+      * sudo apt-get install deborphan -y
+
+   * 卸载：tracker
+ 
+      这个东西一般我只要安装Ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。
+
+   * 删除多余的内核：一定不要删错哦，切记！！
+
+      打开终端敲命令：dpkg --get-selections|grep linux
+      《别人》
+      有image的就是内核文件
+
+   * 删除老的内核文件：
+
+      * sudo apt-get remove 内核文件名 （例如：linux-image-2.6.27-2-generic）
+
+      * 内核删除，释放空间了，应该能释放130－140M空间。
+
+      * 最后不要忘了看看当前内核：uname -a
+
+   * centos
+   
+      * 清除缓存目录(/var/cache/yum)下的软件包
+   
+         命令：yum clean packages
+      
+      * 清除缓存目录(/var/cache/yum)下的 headers
+         
+         命令：yum clean headers
+
+      * 清除缓存目录(/var/cache/yum)下旧的 headers
+         
+         命令：yum clean oldheaders
+      
+      * 清除缓存目录(/var/cache/yum)下的软件包及旧的headers
+         
+         命令：yum clean, yum clean all (= yum clean packages; yum clean oldheaders)
+
+      * 删除废旧内核
+         
+         升级完系统后通常会有好几个内核，如何删除废旧内核呢：
+         
+         * rpm -qa | grep kernel // 查看并列出所有内核
+         
+         * rpm -e kernel的名字 // 删除选定名字的内核
+
 
 
