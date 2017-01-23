@@ -18,6 +18,21 @@
 # Beego设计思路
   
   基本的设计思路是基于tornado、flask、sinatra的一些架构设计上的思路，然后集合GO语言本身设计出的一个http框架，主要应用领域包括api服务、服务器后台、任务调度、日志分发、游戏开发等领域。
+  
+## 项目结构
+  * app：包含 business、model 和 service 层。
+  * app/models：用于 business 和 service 层的数据结构。
+  * app/services：用于为不同服务提供基本函数。可以是针对数据库或 Web 调用的函数。
+  * app/business：被 controller 和处理 business 规则的函数所调用。多种服务的组合调用可用于实现更大层面上的功能。
+  * controllers：URL 或 Web API 调用的切入点。控制器会直接调用 business 层的函数来直接处理请求。
+  * routes：用于 URL 和控制器代码的映射。
+  * static：用于存放脚本、CSS 和图片等静态资源。
+  * test：可使用 go test 运行的测试用例。
+  * utilities：用于支持 Web 应用程序的代码。数据库操作和 panic 处理的样例与抽象化代码。
+  * views：用于存放模板文件。
+  * zscripts：帮助更方便构建、运行和测试 Web 应用程序的脚本。
+
+
 
 # Beego基础应用笔记
   
