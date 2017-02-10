@@ -1,3 +1,8 @@
+# 第三方包
+
+## glide一个golang项目包管理工具[github](https://github.com/Masterminds/glide)[官网](https://glide.sh/)
+
+
 # IDE
 
 ## mac osx 安装 IDE
