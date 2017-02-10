@@ -2,8 +2,8 @@
 
 ## [glide](https://glide.sh/)
 
-   一个golang项目包管理工具[github](https://github.com/Masterminds/glide)
-
+   一个golang项目包管理工具[github](https://github.com/Masterminds/glide)地址，[文档](https://glide.readthedocs.io/en/latest/commands/)地址
+   
 # IDE
 
 ## mac osx 安装 IDE
