@@ -21,7 +21,7 @@
       * glide create|init 初始化项目并创建 glide.yaml文件,glide.yaml格式
         如下
         
-      ```
+         ```
          package: github.com/appleboy/gorush
          import:
          - package: gopkg.in/yaml.v2
@@ -40,7 +40,7 @@
          - package: github.com/asdine/storm
          - package: github.com/appleboy/gofight
          - package: github.com/buger/jsonparser
-      ```
+         ```
 
       * glide get 获取单个包
 
