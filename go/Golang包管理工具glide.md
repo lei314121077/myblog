@@ -38,9 +38,8 @@
             - package: github.com/asdine/storm
             - package: github.com/appleboy/gofight
             - package: github.com/buger/jsonparser
-         
+ 
          ```
-
       * glide get 获取单个包
 
 　　      * --all-dependencies 会下载所有关联的依赖包
