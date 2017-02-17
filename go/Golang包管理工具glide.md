@@ -69,4 +69,5 @@
 
     * [glide包管理](http://studygolang.com/articles/7129)
     * [Golang的包管理之道](http://www.infoq.com/cn/articles/golang-package-management)
+    * [Golang 套件管理工具 Glide](http://studygolang.com/topics/1629)
 
