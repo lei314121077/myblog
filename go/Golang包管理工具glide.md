@@ -17,8 +17,10 @@
       ```
 
    * 命令介绍
-      * glide create|init 初始化项目并创建 glide.yaml文件,glide.yaml格式
+      
+      * glide create|init 初始化项目并创建 glide.yaml文件,glide.yaml格式
         如下
+        
         ```go
          package: github.com/appleboy/gorush
          import:
@@ -39,6 +41,7 @@
          - package: github.com/appleboy/gofight
          - package: github.com/buger/jsonparser
          ```
+         
       * glide get 获取单个包
 
 　　      * --all-dependencies 会下载所有关联的依赖包
