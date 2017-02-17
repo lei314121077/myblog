@@ -21,26 +21,26 @@
       * glide create|init 初始化项目并创建 glide.yaml文件,glide.yaml格式
         如下
         
-         ```golang
-            package: github.com/appleboy/gorush
-            import:
-            - package: gopkg.in/yaml.v2
-            - package: gopkg.in/redis.v3
-            - package: github.com/Sirupsen/logrus
-             version: v0.10.0
-            - package: github.com/appleboy/gin-status-api
-            - package: github.com/fvbock/endless
-            - package: github.com/gin-gonic/gin
-            - package: github.com/google/go-gcm
-            - package: github.com/sideshow/apns2
-             subpackages:
-             - certificate
-             - payload
-            - package: github.com/stretchr/testify
-            - package: github.com/asdine/storm
-            - package: github.com/appleboy/gofight
-            - package: github.com/buger/jsonparser
-         ```
+      ```
+         package: github.com/appleboy/gorush
+         import:
+         - package: gopkg.in/yaml.v2
+         - package: gopkg.in/redis.v3
+         - package: github.com/Sirupsen/logrus
+         version: v0.10.0
+         - package: github.com/appleboy/gin-status-api
+         - package: github.com/fvbock/endless
+         - package: github.com/gin-gonic/gin
+         - package: github.com/google/go-gcm
+         - package: github.com/sideshow/apns2
+         subpackages:
+         - certificate
+         - payload
+         - package: github.com/stretchr/testify
+         - package: github.com/asdine/storm
+         - package: github.com/appleboy/gofight
+         - package: github.com/buger/jsonparser
+      ```
 
       * glide get 获取单个包
 
