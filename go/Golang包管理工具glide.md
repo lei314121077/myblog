@@ -21,7 +21,7 @@
       * glide create|init 初始化项目并创建 glide.yaml文件,glide.yaml格式
         如下
         
-         ```go
+         ```
             package: github.com/appleboy/gorush
             import:
             - package: gopkg.in/yaml.v2
