@@ -155,9 +155,9 @@
       }
     ```
 
-## 仓储模块
+## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
 
-## 财务模块
+## [财务模块](https://www.odoo.com/zh_CN/page/tour)
 
-## 车辆管理
+## [车辆管理](https://www.odoo.com/zh_CN/page/tour)
 
