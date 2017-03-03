@@ -31,7 +31,7 @@
   ```
     sudo service postgresql restart
   ```
-## OERP零散
+## [OERP零散](https://www.odoo.com/zh_CN/page/tour)
   
 * 替换logo为自己公司的logo
     
