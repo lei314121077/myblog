@@ -17,3 +17,4 @@
   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 
   ```
+  可[参考](http://docs.brew.sh/FAQ.html)

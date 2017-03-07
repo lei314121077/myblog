@@ -17,7 +17,29 @@
       ```
 
    * 命令介绍
-      * glide create|init 初始化项目并创建glide.yaml文件.
+      * glide "create|init" 初始化项目并创建 glide.yaml文件,glide.yaml格式如下
+         ```golang
+         
+            package: github.com/appleboy/gorush
+            import:
+            - package: gopkg.in/yaml.v2
+            - package: gopkg.in/redis.v3
+            - package: github.com/Sirupsen/logrus
+            version: v0.10.0
+            - package: github.com/appleboy/gin-status-api
+            - package: github.com/fvbock/endless
+            - package: github.com/gin-gonic/gin
+            - package: github.com/google/go-gcm
+            - package: github.com/sideshow/apns2
+            subpackages:
+            - certificate
+            - payload
+            - package: github.com/stretchr/testify
+            - package: github.com/asdine/storm
+            - package: github.com/appleboy/gofight
+            - package: github.com/buger/jsonparser
+ 
+         ```
       * glide get 获取单个包
 
 　　      * --all-dependencies 会下载所有关联的依赖包
@@ -74,4 +96,5 @@
 
     * [glide包管理](http://studygolang.com/articles/7129)
     * [Golang的包管理之道](http://www.infoq.com/cn/articles/golang-package-management)
+    * [Golang 套件管理工具 Glide](http://studygolang.com/topics/1629)
 
