@@ -17,9 +17,11 @@
 
 
 # 简介
-<p> GO语言诞生于2007年，据说当时是狗爹（Google）的几位大牛搞出来的Robert Griesemer, Rob Pike, 和 Ken Thompson。
+<p> 
+  GO语言诞生于2007年，据说当时是狗爹（Google）的几位大牛搞出来的Robert Griesemer, Rob Pike, 和 Ken Thompson。
 GO语言是一门静态类型的语言，类似于C语言一样，他自带有类型收集，垃圾收集，动态输入，以及内置了对并发的支持。
-还有丰富的标准库。</p>
+还有丰富的标准库。
+</p>
 
 #特点
 <span>支持</span>

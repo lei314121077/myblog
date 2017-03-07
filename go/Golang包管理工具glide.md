@@ -25,6 +25,10 @@
 　　      * -s 删除所有版本控制，如.git
 
 　　      * -v 删除嵌套的vendor
+      * glide help 查看帮助
+      * glide --version 查看版本号
+      * glide list 查看包列表
+      * glide tree 以树状图的形呈现
 
       * glide install 安装包
 
@@ -63,6 +67,7 @@
           devImports: []
        ```
        > B同学：拉去项目，执行 glide install，会自动下载对应的包
+
 
  
  # 参考
