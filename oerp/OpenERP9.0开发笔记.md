@@ -89,7 +89,7 @@
   ```
   * 模块文件夹清单
   
-    然后作为Odoo框架的模块还必须新建一个 __openerp__.py 文件，最小型的什么都不做的Odoo模块就需要这两个文件，一个是这个 __openerp__.py 文件，一个是 __init__.py 文件。
+    然后作为Odoo框架的模块还必须新建一个 [__openerp__.py](http://www.oejia.net/blog/2016/04/22/odoo_config.html) 文件，最小型的什么都不做的Odoo模块就需要这两个文件，一个是这个 __openerp__.py 文件，一个是 __init__.py 文件。
     
     * data文件夹 ，放着demo和data xml
     
