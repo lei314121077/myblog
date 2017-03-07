@@ -10,7 +10,7 @@
 
 ## [GoVendor依赖包管理工具](https://github.com/kardianos/govendor)
 
-## [Graphql](https://segmentfault.com/a/1190000004586237)[github](https://github.com/graphql-go/graphql)
+## [Graphql](https://segmentfault.com/a/1190000004586237)for[github](https://github.com/graphql-go/graphql)
    
    * [graphql中文文档]（https://www.gitbook.com/book/wanglihui/graphql/details）
    
