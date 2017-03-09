@@ -1,7 +1,44 @@
 
 # 模块开发
+ * [10开发文档](https://www.odoo.com/documentation/10.0/howtos/backend.html)
  * [9.0开发文档](https://www.odoo.com/documentation/9.0/howtos/backend.html#build-an-odoo-module)
  * [8.0开发文档](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
+ 
+## 一些常用的依赖包
+  ```python
+  pip install http://download.gna.org/pychart/PyChart-1.39.tar.gz
+  pip install babel
+  pip install docutils
+  pip install feedparser
+  pip install gdata
+  pip install Jinja2
+  pip install mako
+  pip install mock
+  pip install psutil
+  pip install psycopg2
+  pip install pydot
+  pip install python-dateutil
+  pip install python-openid
+  pip install pytz
+  pip install pywebdav
+  pip install pyyaml
+  pip install reportlab
+  pip install simplejson
+  pip install unittest2
+  pip install vatnumber
+  pip install vobject
+  pip install werkzeug
+  pip install xlwt
+  pip install pyopenssl
+  pip install lxml
+  pip install python-ldap
+  pip install pillow
+  pip install decorator
+  pip install requests
+  pip install pyPdf
+  pip install wkhtmltopdf
+  pip install passlib
+  ```
 ## 常用的一些命令
   * 启动 odoo
   
