@@ -203,15 +203,15 @@
    
    * 在模型增加一个字段
       
-      ```python
-         # -*- coding: utf-8 -*-
-         #!/usr/bin/env python
-         from openerp import models, fields, api
-         class TodoTask(models.Model):
-           _inherit = 'todo.task'
-           user_id = fields.Many2one('res.users', 'Responsible')
-           date_deadline = fields.Date('Deadline')
-      ```
+     ```python
+      # -*- coding: utf-8 -*-
+      #!/usr/bin/env python
+      from openerp import models, fields, api
+      class TodoTask(models.Model):
+        _inherit = 'todo.task'
+        user_id = fields.Many2one('res.users', 'Responsible')
+        date_deadline = fields.Date('Deadline')
+     ```
       
   mo 
 ## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
