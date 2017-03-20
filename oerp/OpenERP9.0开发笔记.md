@@ -98,7 +98,7 @@
     > 更换完，如果加载之后还是原来的logo那么，请关闭你的浏览器然后再清一下缓存。
     
   * 修改版权声明 Powered by Odoo
-   ```
+  ```
     # 修改版权声明有3个地方1、database manage页面，2、login 页面,3、后台左侧菜单栏底部
     第一步: 
     修改这个文件下的 odoo/addons/web/views/webclient_templates.xml “<div class="oe_footer">”把它修改成你自己的或者直接注释掉
@@ -111,8 +111,8 @@
     .openerp .oe_leftbar > div .oe_footer a{
     .openerp .oe_leftbar > div .oe_footer a span {
     我是直接隐藏掉，即新增dispay：none；
-   ```
-  或者你可以[参考这里](http://odoo.guide/debranding-odoo-backend/)
+  ```
+     或者你可以[参考这里](http://odoo.guide/debranding-odoo-backend/)
   
 ## [定制开发](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
   
@@ -195,11 +195,11 @@
 
    * _inherit 继承
 
-      _inherit属性指明扩展/继承哪个模型. 新的模型继承了父模型的所有特性, 在新类中定义我们期望的特性即可.
+      > _inherit属性指明扩展/继承哪个模型. 新的模型继承了父模型的所有特性, 在新类中定义我们期望的特性即可.
    
    * self.env[] 引用
    
-      在Odoo中, 模型是独立于特定模块的, 可以通过self.env[]获得模型的引用. 例如模型res.partner的引用可以使用self.env[‘res.partner’]获得.
+      > 在Odoo中, 模型是独立于特定模块的, 可以通过self.env[]获得模型的引用. 例如模型res.partner的引用可以使用self.env[‘res.partner’]获得.
    
    * 在模型增加一个字段
       
