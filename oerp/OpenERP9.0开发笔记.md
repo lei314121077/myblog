@@ -203,7 +203,7 @@
    
    * 在模型增加一个字段
       
-     ```python
+   ```python
       # -*- coding: utf-8 -*-
       #!/usr/bin/env python
       from openerp import models, fields, api
@@ -211,9 +211,9 @@
         _inherit = 'todo.task'
         user_id = fields.Many2one('res.users', 'Responsible')
         date_deadline = fields.Date('Deadline')
-     ```
+   ```
       
-  mo 
+
 ## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
 
 ## [财务模块](https://www.odoo.com/zh_CN/page/tour)
