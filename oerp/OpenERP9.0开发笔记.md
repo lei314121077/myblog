@@ -191,7 +191,29 @@
 
       }
     ```
+## [扩展模块开发]()
 
+   * _inherit 继承
+
+      _inherit属性指明扩展/继承哪个模型. 新的模型继承了父模型的所有特性, 在新类中定义我们期望的特性即可.
+   
+   * self.env[] 引用
+   
+      在Odoo中, 模型是独立于特定模块的, 可以通过self.env[]获得模型的引用. 例如模型res.partner的引用可以使用self.env[‘res.partner’]获得.
+   
+   * 在模型增加一个字段
+      
+      ```python
+         # -*- coding: utf-8 -*-
+         #!/usr/bin/env python
+         from openerp import models, fields, api
+         class TodoTask(models.Model):
+           _inherit = 'todo.task'
+           user_id = fields.Many2one('res.users', 'Responsible')
+           date_deadline = fields.Date('Deadline')
+      ```
+      
+  mo 
 ## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
 
 ## [财务模块](https://www.odoo.com/zh_CN/page/tour)
