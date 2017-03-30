@@ -70,26 +70,29 @@
      * error: [Errno 48] Address already in use 端口占用
      
         * ps -fA | grep python
-        ```Python
+        
+           ```Python
            501  7783     1   0  4:39PM ??         0:47.28 python odoo.py
            501 12302  9439   0  2:30PM ttys000    0:00.00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-di
-        ```
+           ```
         * kill 7783  然后再重新启动
+        
      * 启动UTF-8编码异常
+     
         ```python 
            export LC_ALL=en_US.UTF-8
            export LANG=en_US.UTF-8
         ```
+        
      * 动态查看ERP系统日志
+     
         ```
         日志查看：tail -f -n 100 /var/log/odoo/odoo.log		
 
         ```
     
    # OperationalError: could not connect to server: No such file or directory 不能连接到服务器，没有这样的目录
-    ```
-  
-    ```
+
 
  * 备份还原数据库
    
