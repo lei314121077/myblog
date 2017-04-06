@@ -6,7 +6,7 @@
 
    * 安装
    
-      ```go
+   ```go
         # mac install 
         $ brew install ngrok
         # 认证
@@ -14,13 +14,13 @@
         # run
         $ ngrok http 8080
         # 然后等链接到服务器会获得ngrok的地址
-      ```
+   ```
       
 ## 参考
 
-   * [搭建自己的ngrok服务](http://tonybai.com/2015/03/14/selfhost-ngrok-service/)
+  * [搭建自己的ngrok服务](http://tonybai.com/2015/03/14/selfhost-ngrok-service/)
    
-   * [手把手教你搭建ngrok服务－轻松外网调试本机站点](https://aotu.io/notes/2016/02/19/ngrok/)   
+  * [手把手教你搭建ngrok服务－轻松外网调试本机站点](https://aotu.io/notes/2016/02/19/ngrok/)   
       
       
       
