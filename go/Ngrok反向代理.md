@@ -5,7 +5,7 @@
 
    * 安装
    
-      ```go
+   ```go
         # mac install 
         $ brew install ngrok
         # 认证
@@ -13,7 +13,7 @@
         # run
         $ ngrok http 8080
         # 然后等链接到服务器会获得ngrok的地址
-      ```
+   ```
       
       
       
