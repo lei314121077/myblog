@@ -213,7 +213,62 @@
         date_deadline = fields.Date('Deadline')
    ```
       
-
+   * 删除单据
+   ```python
+      to_removes = [   
+      # 清除采购单据    
+      ['purchase.order.line',],    
+      ['purchase.order',],    
+      # 清除销售单据
+      ['sale.order.line',],
+      ['sale.order',],
+      ['pos.order.line',],
+      ['pos.order',],
+      # 清除生产单据
+      ['mrp.production.workcenter.line',],
+      ['mrp.production',],
+      ['mrp.production.product.line',],
+      # 清除库存单据
+      ['procurement.order',],
+      ['stock.quant',],
+      ['stock.move',],
+      ['stock.pack.operation',],
+      ['stock.picking',],
+      ['stock.inventory.line',],
+      ['stock.inventory',],
+      ['stock.quant.package',],
+      ['stock.quant.move.rel',],
+      ['stock.production.lot',],
+      ['stock.fixed.putaway.strat',],
+      # 清除财务单据
+      ['account.voucher.line',],
+      ['account.voucher',],
+      ['account.bank.statement',],
+      ['account.bank.statement.line',],
+      ['account.payment',],
+      ['account.analytic.line',],
+      ['account.invoice.line',],
+      ['account.invoice',],
+      ['account.partial.reconcile',],
+      ['account.move.line',],
+      ['account.move',],
+      # 清除其他数据
+      ['mail.message',],
+      def remove_data(cr):
+         try:
+          for line in to_removes :
+            obj_name = line[0]
+            obj = self.pool.get(obj_name)
+            if obj and obj._table_exist:
+               sql = "delete from %s" % obj._table
+               cr.execute( sql)
+               #清除工作流
+               cr.execute("delete from wkf_workitem")
+               cr.execute("delete from wkf_instance")
+         except Exception, e:
+           raise Warning(e)
+         return True<br><br>remove_data(cr,)
+   ```
 ## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
 
 ## [财务模块](https://www.odoo.com/zh_CN/page/tour)
