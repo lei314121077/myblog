@@ -192,7 +192,9 @@
       }
     ```
 ## [扩展模块开发]()
+
    * 要能取得模型，模型的一切方法都能调用， 标准的方法
+   
       <table>
       <tr>
       <td>方法</td><td>必要参数</td>
@@ -249,9 +251,6 @@
       <tr>
       <td>name_get</td><td></td>
       </tr>
-      
-      
-      
       </table>
 
    * _inherit 继承
@@ -330,6 +329,8 @@
            raise Warning(e)
          return True<br><br>remove_data(cr,)
    ```
+   
+   
 ## [仓储模块](https://www.odoo.com/zh_CN/page/tour)
 
 ## [财务模块](https://www.odoo.com/zh_CN/page/tour)
