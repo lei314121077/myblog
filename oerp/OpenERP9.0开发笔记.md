@@ -192,6 +192,67 @@
       }
     ```
 ## [扩展模块开发]()
+   * 要能取得模型，模型的一切方法都能调用， 标准的方法
+      <table>
+      <tr>
+      <td>方法</td><td>必要参数</td>
+      </tr>
+      <tr>
+      <td>search</td><td>domain</td>
+      </tr>
+      <tr>
+      <td>search_count</td><td>domain</td>
+      </tr>
+      <tr>
+      <td>search_read</td><td>domain</td>
+      </tr>
+      <tr>
+      <td>browse</td><td></td>
+      </tr>
+      <tr>
+      <td>copy</td><td></td>
+      </tr>
+      <tr>
+      <td>copy_data</td><td></td>
+      </tr>
+      
+      <tr>
+      <td>create</td><td>vals</td>
+      </tr>
+      <tr>
+      <td>write</td><td>vals</td>
+      </tr>
+      <tr>
+      <td>update</td><td>dict{key:values}</td>
+      </tr>
+      <tr>
+      <td>default_get</td><td></td>
+      </tr>
+      
+      <tr>
+      <td>name_get</td><td></td>
+      </tr>
+      
+      <tr>
+      <td>read</td><td></td>
+      </tr>
+      
+      <tr>
+      <td>read_group</td><td></td>
+      </tr>
+      <tr>
+      <td>unlink</td><td></td>
+      </tr>
+      <tr>
+      <td>name_get</td><td></td>
+      </tr>
+      <tr>
+      <td>name_get</td><td></td>
+      </tr>
+      
+      
+      
+      </table>
 
    * _inherit 继承
 
