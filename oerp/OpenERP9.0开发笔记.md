@@ -4,6 +4,25 @@
  * [9.0开发文档](https://www.odoo.com/documentation/9.0/howtos/backend.html#build-an-odoo-module)
  * [8.0开发文档](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
  
+
+## 数据库命令
+ 
+ * 可以使用createdb命令去创建空数据库，而且还可以使用—template选项去复制一个已有的数据库 
+    
+    ```
+       created –template=demo demo-test
+    ```
+ * psql --help 查看帮助
+    
+    ```
+       psql --help
+    ```
+ * 查看你的系统中已存在了哪些数据库，可以使用PostgreSql的 psql命令
+    
+    ```
+    drop database-name
+    ```
+
 ## 一些常用的依赖包
   ```python
   pip install http://download.gna.org/pychart/PyChart-1.39.tar.gz
