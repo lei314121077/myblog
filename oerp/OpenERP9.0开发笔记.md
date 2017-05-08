@@ -22,7 +22,18 @@
     ```
     drop database-name
     ```
-
+  * psql命令行
+    ```
+    \h：查看SQL命令的解释，比如\h select。
+    \?：查看psql命令列表。
+    \l：列出所有数据库。
+    \c [database_name]：连接其他数据库。
+    \d：列出当前数据库的所有表格。
+    \d [table_name]：列出某一张表格的结构。
+    \du：列出所有用户。
+    \e：打开文本编辑器。
+    \conninfo：列出当前数据库和连接的信息。
+    ```
 ## 一些常用的依赖包
   ```python
   pip install http://download.gna.org/pychart/PyChart-1.39.tar.gz
@@ -135,7 +146,7 @@
   
 ## [定制开发](http://blog.sunansheng.com/python/odoo/odoo.html#sec-3)
   
-  * 快速创建自己的模块(./odoo.py scaffold 我的模块名  模块包容器)
+* 快速创建自己的模块(./odoo.py scaffold 我的模块名  模块包容器)
   
   ```python
      $  ./odoo.py scaffold  mymodule myaddons
@@ -143,7 +154,7 @@
      # 姿势是这样
      $  ./odoo.py scaffold  mymodule addons
   ```
-  * 模块文件夹清单
+* 模块文件夹清单
   
     然后作为Odoo框架的模块还必须新建一个 [__openerp__.py](http://www.oejia.net/blog/2016/04/22/odoo_config.html) 文件，最小型的什么都不做的Odoo模块就需要这两个文件，一个是这个 __openerp__.py 文件，一个是 __init__.py 文件。
     
@@ -212,7 +223,7 @@
     ```
 ## [扩展模块开发]()
 
-   * 要能取得模型，模型的一切方法都能调用， 标准的方法
+ * 要能取得模型，模型的一切方法都能调用， 标准的方法
    
       <table>
         <tr>
@@ -268,15 +279,15 @@
         </tr>
       </table>
 
-   * _inherit 继承
+ * _inherit 继承
 
       _inherit属性指明扩展/继承哪个模型. 新的模型继承了父模型的所有特性, 在新类中定义我们期望的特性即可.
    
-   * self.env[] 引用
+ * self.env[] 引用
    
-      > 在Odoo中, 模型是独立于特定模块的, 可以通过self.env[]获得模型的引用. 例如模型res.partner的引用可以使用self.env[‘res.partner’]获得.
+    > 在Odoo中, 模型是独立于特定模块的, 可以通过self.env[]获得模型的引用. 例如模型res.partner的引用可以使用self.env[‘res.partner’]获得.
    
-   * 在模型增加一个字段
+ * 在模型增加一个字段
       
    ```python
       # -*- coding: utf-8 -*-
@@ -288,7 +299,7 @@
         date_deadline = fields.Date('Deadline')
    ```
       
-   * 删除单据
+ * 删除单据
    ```python
       to_removes = [   
       # 清除采购单据    
