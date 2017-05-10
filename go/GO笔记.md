@@ -70,9 +70,8 @@
 
 
 
-# 一些规范
 
-# Go开发规范
+# GoLang 开发规范
 
 [Build web application with golang](https://github.com/astaxie/build-web-application-with-golang)
 
