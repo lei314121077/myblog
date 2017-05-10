@@ -213,3 +213,31 @@ Go 的代码审查建议，更多可以查看[https://github.com/golang/go/wiki/
 * 变量命名
 
   在 Go 中的变量名应该短而不是长。对于空间有限的局部变量更是如此。例如 c 表示行数，i 表示索引。
+  
+  
+
+
+
+
+
+
+## Build
+
+  ```sh
+  # 编译到 linux 64bit
+  $ GOOS=linux GOARCH=amd64 go build
+  # 或者可以使用 -o 选项指定生成二进制文件名字
+  $ GOOS=linux GOARCH=amd64 go build -o app.linux
+
+  # 编译到 linux 32bit
+  $ GOOS=linux GOARCH=386 go build
+
+  # 编译到 windows 64bit
+  $ GOOS=windows GOARCH=amd64 go build
+
+  # 编译到 windows 32bit
+  $ GOOS=windows GOARCH=386 go build
+
+  # 编译到 Mac OS X 64bit
+  $ GOOS=darwin GOARCH=amd64 go build
+  ```
