@@ -66,27 +66,27 @@
    *　bleach 一个简单的白名单。
    *　defusedxml 强制使用xml格式？没用过不多说。
    *　django-autoadmin 自动生成admin密码的。
-　　*　django-admin-honeypot 一个假的管理后台登录界面，并记录登录操作。
-　　*　django-axes 同上，记录登录失败行为的。
-　　*　django-ratelimit-backend 登录速度限制，防暴力破解的。
-　　*　django-passwords 检测密码强度的。
-　　*　django-secure 这个比较杂，看文档吧还是。
+   *　django-admin-honeypot 一个假的管理后台登录界面，并记录登录操作。
+   *　django-axes 同上，记录登录失败行为的。
+   *　django-ratelimit-backend 登录速度限制，防暴力破解的。
+   *　django-passwords 检测密码强度的。
+   *　django-secure 这个比较杂，看文档吧还是。
 
 ##　测试
-
-　　*　coverage 这个不多说，建议关注。
-　　*　django-coverage-plugin coverage的django插件，可以用来覆盖测试django的模板，建议关注。
-　　*　django-test-plus 增强了默认的TestCase，建议关注。
-　　*　factory_boy 生成测试数据的库，建议关注。
-　　*　model_mommy 同上。
-　　*　mock 这个已经集成在Python3.4了。
-　　*　pytest python测试工具，建议关注。
-　　*　pytest-django 这是一个基于pytest的django插件，建议关注。
-　　*　pytest-cov 把pytest和coverage结合的插件。
-　　*　pytest-xdist 多进程执行测试。
-　　*　nose 一个单元测试模块。
-　　*　pytest-sugar 增强了pytest的提示等。
-　　*　tox 提供了一个命令行工具自动打包、测试、发布程序，建议关注。
+   
+   *　coverage 这个不多说，建议关注。
+   *　django-coverage-plugin coverage的django插件，可以用来覆盖测试django的模板，建议关注。
+   *　django-test-plus 增强了默认的TestCase，建议关注。
+   *　factory_boy 生成测试数据的库，建议关注。
+   *　model_mommy 同上。
+   *　mock 这个已经集成在Python3.4了。
+   *　pytest python测试工具，建议关注。
+   *　pytest-django 这是一个基于pytest的django插件，建议关注。
+   *　pytest-cov 把pytest和coverage结合的插件。
+   *　pytest-xdist 多进程执行测试。
+   *　nose 一个单元测试模块。
+   *　pytest-sugar 增强了pytest的提示等。
+   *　tox 提供了一个命令行工具自动打包、测试、发布程序，建议关注。
 
 ##　用户注册
 
