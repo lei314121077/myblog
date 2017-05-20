@@ -43,7 +43,7 @@
 
 ##　日志
 　　　
-   *　logutils 加强了原生的logging。
+   * logutils 加强了原生的logging。
    * Sentry 一个在线记录异常的网站。
    * App Enlight 同上。
    * Newrelic 功能同上，还包含了性能分析等，收费。类似的还有opbeat。
@@ -62,7 +62,6 @@
    *　django-tastypie 另一个rest框架，没用过，看起来比第一个简单。
 
 ## 安全
-   
    *　bleach 一个简单的白名单。
    *　defusedxml 强制使用xml格式？没用过不多说。
    *　django-autoadmin 自动生成admin密码的。
@@ -72,7 +71,7 @@
    *　django-passwords 检测密码强度的。
    *　django-secure 这个比较杂，看文档吧还是。
 
-##　测试
+## 测试
    
    *　coverage 这个不多说，建议关注。
    *　django-coverage-plugin coverage的django插件，可以用来覆盖测试django的模板，建议关注。
@@ -88,13 +87,13 @@
    *　pytest-sugar 增强了pytest的提示等。
    *　tox 提供了一个命令行工具自动打包、测试、发布程序，建议关注。
 
-##　用户注册
+## 用户注册
 
 　　*　django-allauth 提供了常见的注册和认证方式，比如邮件、twitter、facebook、github、google等。社交支持在我大天朝比较鸡肋。
 　　*　python-social-auth 同上。
 　　*　django-authtools 自定义用户模型。
 
-##　视图
+## 视图
    
    *　django-braces 如果你使用类视图，强烈建议使用这个库，提供了很多有用的mixin类,建议关注。
    *　django-extra-views 提供了很多通用类视图，建议关注。
