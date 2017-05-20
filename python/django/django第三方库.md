@@ -41,7 +41,7 @@
    * django-forms-builder 可以控制admin的表单样式。
    * django-attachments 一款通用的附件上传程序。
 
-##　日志
+## 日志
 　　　
    * logutils 加强了原生的logging。
    * Sentry 一个在线记录异常的网站。
@@ -89,10 +89,10 @@
    * tox 提供了一个命令行工具自动打包、测试、发布程序，建议关注。
 
 ## 用户注册
-
-　　* django-allauth 提供了常见的注册和认证方式，比如邮件、twitter、facebook、github、google等。社交支持在我大天朝比较鸡肋。
-　　* python-social-auth 同上。
-　　* django-authtools 自定义用户模型。
+   
+   * django-allauth 提供了常见的注册和认证方式，比如邮件、twitter、facebook、github、google等。社交支持在我大天朝比较鸡肋。
+   * python-social-auth 同上。
+   * django-authtools 自定义用户模型。
 
 ## 视图
    
