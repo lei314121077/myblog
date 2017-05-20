@@ -57,9 +57,9 @@
 
 ## REST APIs
 
-  * django-rest-framework 不多说了，不过本人基本不用这个框架，每次都手动开撸自己从头写。
-  *　django-jsonview 一个简单的装饰器，把python对象(列表和字典，类实例能不能自动转本人没试过)转换为json格式返回。
-  *　django-tastypie 另一个rest框架，没用过，看起来比第一个简单。
+   * django-rest-framework 不多说了，不过本人基本不用这个框架，每次都手动开撸自己从头写。
+   *　django-jsonview 一个简单的装饰器，把python对象(列表和字典，类实例能不能自动转本人没试过)转换为json格式返回。
+   *　django-tastypie 另一个rest框架，没用过，看起来比第一个简单。
 
 ## 安全
    
