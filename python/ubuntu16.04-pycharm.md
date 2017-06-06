@@ -1,4 +1,6 @@
-##　在Ｕbuntu安装Ｐycharm
+# Ubuntu Ｐython　Ｔools
+
+## Ｐycharm
 
 * 添加源
 
