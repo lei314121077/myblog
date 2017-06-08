@@ -1,5 +1,19 @@
 
 # 异常处理
+   * socket 
+    ```
+          2017-06-08 14:56:14,468 54675 ERROR ? openerp.http: Exception during JSON request handling.
+      Traceback (most recent call last):
+        File "/root/odoo/openerp/http.py", line 647, in _handle_exception
+          return super(JsonRequest, self)._handle_exception(exception)
+        File "/root/odoo/openerp/http.py", line 1630, in _dispatch_nodb
+          func, arguments = self.nodb_routing_map.bind_to_environ(request.httprequest.environ).match()
+        File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 1430, in match
+          raise NotFound()
+      NotFound: 404: Not Found
+    ```
+    > 　解决方式　　pip install --upgrade Werkzeug==0.9.6　，因为这个问题是更新werkzeug包导致的冲突，所以如果不更新到指定的版本ＥＲＰ的程序根本跑步起来
+    
    * 查看当前环境下，特定端口的运行状态
 
     ```
