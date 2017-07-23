@@ -79,16 +79,16 @@
         返回一个初始化的实例，返回的是一个实例，而不是指针，其只能用来初始化：slice,map和channel三种类型
 
 
-  * go 派生类型
+   * go 派生类型
    
-    * (a) 指针类型（Pointer）
-    * (b) 数组类型
-    * (c) 结构化类型(struct)
-    * (d) Channel 类型
-    * (e) 函数类型
-    * (f) 切片类型
-    * (g) 接口类型（interface）
-    * (h) Map 类型
+     * (a) 指针类型（Pointer）
+     * (b) 数组类型
+     * (c) 结构化类型(struct)
+     * (d) Channel 类型
+     * (e) 函数类型
+     * (f) 切片类型
+     * (g) 接口类型（interface）
+     * (h) Map 类型
 
 
 
