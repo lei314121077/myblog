@@ -150,12 +150,12 @@
     ```
     
     [pip官方文档](https://pip.pypa.io/en/latest/installing/)
-    
-# [numpy 模块](http://cdwanze.github.io/%E7%94%B5%E8%84%91/python/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/numpy%E6%A8%A1%E5%9D%97.html)
+# [datetime 包的应用](http://www.wklken.me/posts/2015/03/03/python-base-datetime.html#1-datetime)    
+# [numpy 包的应用](http://cdwanze.github.io/%E7%94%B5%E8%84%91/python/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/numpy%E6%A8%A1%E5%9D%97.html)
   
-# [Requests](http://cn.python-requests.org/zh_CN/latest/) 
+# [Requests 包的应用](http://cn.python-requests.org/zh_CN/latest/) 
 
-# [UrlLib & UrlLib2](https://docs.python.org/3/library/urllib.request.html)
+# [UrlLib & UrlLib2 包的应用](https://docs.python.org/3/library/urllib.request.html)
   
 # [用ET包解析XML](https://docs.python.org/3/library/xml.etree.elementtree.html)
   
