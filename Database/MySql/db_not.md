@@ -37,6 +37,14 @@
 * MySQL表级锁的锁模式（MyISAM)
    
    * 并发锁
+   
+      MyISAM也支持查询和操作的并发进行。MyISAM存储引擎有一个系统变量concurrent_insert，专门用以控制其并发插入的行为，其值分别可以为0、1或2。
+      
+      * 当concurrent_insert设置为0时，不允许并发插入。
+      * 当concurrent_insert设置为1时，如果MyISAM允许在一个读表的同时，另一个进程从表尾插入记录。这也是MySQL的默认设置。
+      * 当concurrent_insert设置为2时，无论MyISAM表中有没有空洞，都允许在表尾插入记录，都允许在表尾并发插入记录。
+   
+   可以利用MyISAM存储引擎的并发插入特性，来解决应用中对同一表查询和插入锁争用。例如，将concurrent_insert系统变量为2，总是允许并发插入；同时，通过定期在系统空闲时段执行OPTIONMIZE TABLE语句来整理空间碎片，收到因删除记录而产生的中间空洞。
    
    * 共享锁
 
