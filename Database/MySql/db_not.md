@@ -135,10 +135,15 @@ INSERT...SELECT...和 CREATE TABLE...SELECT...语句，可能会阻止对源表�
 对于一些特定的事务，可以使用表锁来提高处理速度或减少死锁的可能
 
 ## mysql 分库分表
+
 * 参考
-   * 参考1 [oneproxy](http://www.shixinke.com/mysql/mysql-partion-with-oneproxy)
-   * 参考2 [其它插件](http://www.jianshu.com/p/b1395b680818)
-   * 参考3 [配置](http://suifu.blog.51cto.com/9167728/1885581)
+   
+  * 参考1 [oneproxy](http://www.shixinke.com/mysql/mysql-partion-with-oneproxy)
+  
+  * 参考2 [其它插件](http://www.jianshu.com/p/b1395b680818)
+  
+  * 参考3 [配置](http://suifu.blog.51cto.com/9167728/1885581)
+  
 当数据库里面的数据达到一定量级之后我就要考虑到是否对数据进行分库，或者 进行分表。这里我们项目中用到的就是[oneproxy](http://www.cnblogs.com/youge-OneSQL/articles/4208583.html)第三方分库分表的插件。据说是大神“原支付宝首席架构师楼方鑫开发”
 
 
