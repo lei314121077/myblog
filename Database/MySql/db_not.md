@@ -53,10 +53,8 @@
       mysql为我们提供了一些设置来调节MyISAM的调度行为。
       
       * 通过指定启动参数low-priority-updates，使MyISAM引擎默认给予读请求以优先的权利。
-      
-      * 通过执行命令SET LOW_PRIORITY_UPDATES=1，使该连接发出的更新请求优先级降低。
-      
-      * 通过指定INSERT、UPDATE、DELETE语句的LOW_PRIORITY属性，降低该语句的优先级。
+      * 通过执行命令SET LOW_PRIORITY_UPDATES=1，使该连接发出的更新请求优先级降低。
+      * 通过指定INSERT、UPDATE、DELETE语句的LOW_PRIORITY属性，降低该语句的优先级。
       
       > 虽然上面3种方法都是要么更新优先，要么查询优先的方法，但还是可以用其来解决查询相对重要的应用（如用户登录系统）中，读锁等待严重的问题。
       
