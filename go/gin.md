@@ -1,7 +1,8 @@
 # [gin web 框架](https://github.com/ningskyer/gin-doc-cn#install)的应用
 
+## [xorm](http://xorm.io/docs)
 
-## [GORM](https://jasperxu.github.io/gorm-zh/)
+## [gorm](https://jasperxu.github.io/gorm-zh/)
 
 
 ## [cache](https://github.com/gin-contrib/cache)
