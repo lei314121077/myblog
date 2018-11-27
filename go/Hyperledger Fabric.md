@@ -31,6 +31,75 @@
   docker pull hyperledger/fabric-zookeeper:latest
 
 ```
+
+## excamples 示例
+
+* 进入cli容器
+
+```bashrc
+ docker exec -it cli bash
+```
+
+### e2e_cli
+
+* 运行与启动
+
+```bashrc
+# 目录
+cd /home/ray/go/src/github.com/hyperledger/fabric/examples/e2e_cli
+
+# 启动
+./network_setup.sh up
+
+# 结束
+./network_setup.sh down
+
+```
+
+
+### chaincode
+
+cd /home/ray/go/src/github.com/hyperledger/fabric-samples/chaincode-docker-devmode
+
+
+* 启动网络
+
+```bashrc
+docker-compose -f docker-compose-simple.yaml up
+```
+
+* 启动chaincode容器
+
+```bashrc
+docker exec -it chaincode bash
+```
+
+* 启动cli容器
+
+```bashrc
+docker exec -it cli bash
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
