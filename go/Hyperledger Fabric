@@ -1,8 +1,37 @@
 # Hyperledger Fabric && 超级账本
 
-## 环境要求
+## Hyperledger Fabric 环境安装与要求
+
 * 1、docker 2、docker-compose 3、go 4、python
+  
   需要通过Docker从网上拉取镜像，然后在容器里面运行
+  
+* 2、docker 容器 添加阿里云容器
+
+```bashrc 
+
+ vi /etc/docker/daemon.json
+ {
+    "registry-mirrors" : ["https://obou6wyb.mirror.aliyuncs.com"]  
+ }
+ 
+  docker pull hyperledger/fabric-tools:x86_64-1.0.0
+  docker pull hyperledger/fabric-couchdb:x86_64-1.0.0
+  docker pull hyperledger/fabric-kafka:x86_64-1.0.0
+  docker pull hyperledger/fabric-zookeeper:x86_64-1.0.0
+  docker pull hyperledger/fabric-orderer:x86_64-1.0.0
+  docker pull hyperledger/fabric-javaenv:x86_64-1.0.0
+  docker pull hyperledger/fabric-ccenv:x86_64-1.0.0
+  docker pull hyperledger/fabric-ca:x86_64-1.0.0
+  docker pull hyperledger/fabric-baseos:x86_64-0.3.1
+  docker pull hyperledger/fabric-baseimage:x86_64-0.3.1
+  docker pull hyperledger/fabric-membersrvc:latest
+  
+  docker pull hyperledger/fabric-kafka:latest
+  docker pull hyperledger/fabric-zookeeper:latest
+
+```
+  
 
 
 
