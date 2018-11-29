@@ -77,6 +77,11 @@ docker-compose -f docker-compose-simple.yaml up
 
 ```bashrc
 docker exec -it chaincode bash
+
+###启动节点###
+CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./my_chaincode01
+###如果失败，把"7052"改为"7051"试试看
+
 ```
 
 * 启动cli容器
@@ -91,8 +96,6 @@ peer chaincode instantiate -n mycc -v 0 -c '{"Args":["a","10"]}' -C myc
 peer chaincode invoke -n mycc -c '{"Args":["set", "a", "20"]}' -C myc
 查询
 peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C myc
-
-
 ```
 
 
