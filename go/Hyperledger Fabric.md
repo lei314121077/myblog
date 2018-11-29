@@ -65,6 +65,11 @@ cd /home/ray/go/src/github.com/hyperledger/fabric-samples/chaincode-docker-devmo
 * 启动网络
 
 ```bashrc
+###删除所有活跃的容器###
+docker rm -f $(docker ps -aq)
+###清理网络缓存###
+docker network prune
+###启动
 docker-compose -f docker-compose-simple.yaml up
 ```
 
