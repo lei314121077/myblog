@@ -79,19 +79,22 @@ docker-compose -f docker-compose-simple.yaml up
 docker exec -it chaincode bash
 
 ###启动节点###
-CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./my_chaincode01
+CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./raycd    # raycd是你编译过后的二进制文件名
 ###如果失败，把"7052"改为"7051"试试看
 
 ```
 
-* 启动cli容器
+* 启动cli容器与[peer命令行](https://blog.csdn.net/sinat_36742186/article/details/79541855)
 
 ```bashrc
+
 docker exec -it cli bash
 
 参考
-peer chaincode install -p chaincodedev/chaincode/你自己的链码文件名 -n mycc -v 0
+peer chaincode install -p chaincodedev/chaincode/{你自己的链码文件名} -n mycc -v 0
 peer chaincode instantiate -n mycc -v 0 -c '{"Args":["a","10"]}' -C myc
+#在CLI内部会为mychaincode创建SignedChaincodeDeploymentSpec，并将其发送到本地peer节点。这些节点会调用LSCC上的Install方法。上述的-p选项指明chaincode的路径，其必须在用户的GOPATH目录下（比如$GOPATH/src/sacc）。
+
 修改为20
 peer chaincode invoke -n mycc -c '{"Args":["set", "a", "20"]}' -C myc
 查询
