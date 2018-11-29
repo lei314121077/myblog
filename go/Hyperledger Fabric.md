@@ -79,6 +79,15 @@ docker exec -it chaincode bash
 ```bashrc
 docker exec -it cli bash
 
+参考
+peer chaincode install -p chaincodedev/chaincode/你自己的链码文件名 -n mycc -v 0
+peer chaincode instantiate -n mycc -v 0 -c '{"Args":["a","10"]}' -C myc
+修改为20
+peer chaincode invoke -n mycc -c '{"Args":["set", "a", "20"]}' -C myc
+查询
+peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C myc
+
+
 ```
 
 
