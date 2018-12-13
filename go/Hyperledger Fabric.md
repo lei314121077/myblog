@@ -1,4 +1,4 @@
-# Hyperledger Fabric && 超级账本
+# 超级账本
 
 ## Hyperledger Fabric 环境安装与要求
 
@@ -102,6 +102,41 @@ peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C myc
 ```
 
 
+# Hyperledger Fabric 
+
+* What's Chaincode And Hyperledger Fabric
+
+链码（chaincode）是 Hyperledger Fabric 提供的智能合约，是上层应用与底层区块链平台交互的媒介。
+
+## 组件
+
+* Channel：
+
+是一种数据隔离机制，保证交易信息只有交易参与方可见，每个channel是一个独立的区块链，这使得多个用户可以共用同一个区块链系统而不用担心信息泄露问题。
+
+* Chaincode：
+
+也叫智能合约，将资产定义和资产处理逻辑封装成接口，当其被用户调用的时候，改变账本的状态。
+
+* Ledger：
+
+区块链账本，保存交易信息和智能合约代码。
+
+* Network：
+
+交易处理节点之间的P2P网络，用于维持区块链账本的一致性。
+
+* Ordering service：
+
+利用kafka、SBTF等共识算法对所有交易信息进行排序并打包成区块，发给committing peers节点，写入区块链中。
+
+* World state：
+
+显示当前资产数据的状态，底层通过LevelDB和CouchDB数据库将区块链中的资产信息组织起来，提供高效的数据访问接口。
+
+* Membership service provider（MSP）：
+
+管理认证信息，为client和peers提供授权服务。
 
 
 
