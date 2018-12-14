@@ -1,3 +1,18 @@
+# 一些经验
+
+* 思考：go里面是否可以有多个gopath
+ 答案是可以的
+* 那么如何配置和管理多个gopath
+```bashrc
+首先你得配置好一个基础的gopath
+然后我们假设你有多个gopath，那么在开发过程当中如何有效的应用gopath呢，在你的bashrc或者zshrc里面加入下面这段alias 
+alias gopath='export GOPATH=`pwd`:$GOPATH'
+然后在你新应用到的gopath目录输入gopath，如果还有2个以上的gopath怎么办，别担心拍下面这个命令解决问题
+export GOPATH=`pwd`:$GOPATH
+
+```
+
+
 # grpc 
 
 go get google.golang.org/grpc
