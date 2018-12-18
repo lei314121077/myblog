@@ -21,7 +21,7 @@ Makefile 本身就是用来描述依赖的，可读性非常好，而且与强�
 * make gocyclo: 下载 gocyclo 圈复杂度计算工具
 * make easyjson: 下载 easyjson 工具
 
-## makefile文件指令。
+[makefile文件指令](http://blog.sina.com.cn/s/blog_9b0604b40101rcxd.html)。
 
 * -i 　　忽略命令执行返回的出错信息。
 * -s 　　沉默模式，在执行之前不输出相应的命令行信息。
