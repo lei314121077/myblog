@@ -1,6 +1,21 @@
 
 # 第三方包
 
+## monitor, mutex, lock有什么区别
+
+* lock和Monitor的区别
+
+一、lock的底层本身是Monitor来实现的，所以Monitor可以实现lock的所有功能。 
+二、Monitor有TryEnter的功能，可以防止出现死锁的问题，lock没有。
+
+* Mutex和其他两者的区别
+
+个人测试三个都是在限制线程之外的互斥，线程之内，都不限制，同一个线程如果被lock两次。是不会出现死锁的。所以Mutex本身可以实现lock和Monitor所有的操作。至少从功能上讲是这样的。
+
+但是Mutex是内核级别的，消耗较大的资源，不适合频繁的操作，会降低操作的效率。所以一般被调用部分的资源锁，常常用lock或者Monitor，可以提高效率。而线程和线程间的协调，可以用Mutex，因为相互互斥切换的机会会大大的降低，效率就不再那么的重要了。
+
+Mutex本身是可以系统级别的，所以是可以跨越进程的。比如我们要实现一个软件不能同时打开两次，那么Mutex是可以实现的，而lock和monitor是无法实现的。
+
 ## [glide](https://glide.sh/)
 
    一个golang项目包管理工具[github](https://github.com/Masterminds/glide)地址，[文档](https://glide.readthedocs.io/en/latest/commands/)地址
